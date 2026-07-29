@@ -1,0 +1,357 @@
+/* ====================================================
+   HIGHLANDS COFFEE - SEARCH DROPDOWN & QUICK VIEW MODAL
+   ==================================================== */
+
+/* Search Container Positioning */
+.search-box {
+  position: relative !important;
+}
+
+@media (max-width: 767px) {
+  .search-box {
+    display: flex !important;
+    width: 100% !important;
+    max-width: 240px !important;
+  }
+}
+
+/* Dropdown Overlay */
+.search-dropdown {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  width: 100%;
+  min-width: 360px;
+  max-width: 520px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.18);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  z-index: 3000;
+  padding: 16px;
+  display: none;
+  animation: searchFadeIn 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@media (max-width: 576px) {
+  .search-dropdown {
+    position: fixed;
+    top: 60px;
+    left: 5%;
+    width: 90%; 
+    min-width: unset;
+    max-width: unset;
+  }
+}
+
+.search-dropdown.show {
+  display: block;
+}
+
+@keyframes searchFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-8px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Header inside dropdown */
+.search-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  border-bottom: 1px dashed #e2e8f0;
+  margin-bottom: 10px;
+}
+
+.search-title {
+  font-size: 14px;
+  color: #64748b;
+  font-weight: 500;
+}
+
+.search-title strong {
+  color: #b81c24;
+  font-weight: 700;
+}
+
+.search-view-mode {
+  display: flex;
+  gap: 4px;
+}
+
+.search-view-mode-btn {
+  background: none;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  padding: 3px 6px;
+  cursor: pointer;
+  color: #64748b;
+  display: flex;
+  align-items: center;
+  transition: all 0.15s ease;
+}
+
+.search-view-mode-btn.active,
+.search-view-mode-btn:hover {
+  background: #f1f5f9;
+  color: #b81c24;
+  border-color: #cbd5e1;
+}
+
+/* Sub-header type selector */
+.search-subheader {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+  font-size: 13px;
+  color: #334155;
+  font-weight: 600;
+}
+
+.search-pill-btn {
+  background: #94a3b8;
+  color: #ffffff;
+  border: none;
+  padding: 3px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* List view vs Grid view for search items */
+.search-results-list {
+  max-height: 380px;
+  overflow-y: auto;
+  padding-right: 4px;
+}
+
+.search-results-list::-webkit-scrollbar {
+  width: 5px;
+}
+.search-results-list::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 10px;
+}
+
+.search-results-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  max-height: 380px;
+  overflow-y: auto;
+}
+
+/* Single product search row */
+.search-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  border-bottom: 1px solid #f8fafc;
+  text-decoration: none !important;
+  color: inherit;
+}
+
+.search-item:hover {
+  background-color: #f8fafc;
+  transform: scale(0.97);
+}
+
+.search-item-img {
+  width: 52px;
+  height: 52px;
+  object-fit: contain;
+  border-radius: 8px;
+  background: #fafafa;
+  border: 1px solid #f1f5f9;
+  padding: 2px;
+  flex-shrink: 0;
+}
+
+.search-item-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.search-item-name {
+  font-size: 13.5px;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 2px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.search-item-price {
+  font-size: 13px;
+  font-weight: 700;
+  color: #b81c24;
+}
+
+.search-item-cat {
+  font-size: 11px;
+  color: #64748b;
+  background: #f1f5f9;
+  padding: 1px 6px;
+  border-radius: 4px;
+  display: inline-block;
+  margin-top: 2px;
+}
+
+/* View More Footer */
+.search-footer {
+  text-align: center;
+  padding-top: 10px;
+  margin-top: 8px;
+  border-top: 1px solid #f1f5f9;
+  font-size: 13px;
+  color: #1e293b;
+  cursor: pointer;
+  font-weight: 500;
+  transition: color 0.15s ease;
+}
+
+.search-footer:hover {
+  color: #b81c24;
+}
+
+/* Quick View Modal Styles */
+.search-modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(3px);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease;
+  padding: 16px;
+}
+
+.search-modal-backdrop.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.search-modal-card {
+  background: #ffffff;
+  width: 100%;
+  max-width: 780px;
+  max-height: 90vh;
+  overflow-y: auto;
+  border-radius: 20px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+  position: relative;
+  transform: scale(0.92);
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  padding: 24px;
+}
+
+.search-modal-backdrop.active .search-modal-card {
+  transform: scale(1);
+}
+
+.search-modal-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #f1f5f9;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #475569;
+  font-size: 20px;
+  transition: all 0.15s ease;
+  z-index: 10;
+}
+
+.search-modal-close:hover {
+  background: #e2e8f0;
+  color: #b81c24;
+}
+
+/* Option Pills */
+.option-pill-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.option-pill {
+  padding: 6px 14px;
+  border-radius: 8px;
+  border: 1.5px solid #e2e8f0;
+  font-size: 13px;
+  font-weight: 600;
+  color: #334155;
+  cursor: pointer;
+  background: #ffffff;
+  transition: all 0.15s ease;
+  user-select: none;
+}
+
+.option-pill:hover {
+  border-color: #b81c24;
+  color: #b81c24;
+}
+
+.option-pill.active {
+  background: #b81c24;
+  color: #ffffff;
+  border-color: #b81c24;
+}
+
+/* Quantity selector */
+.qty-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  border: 1px solid #cbd5e1;
+  background: #f8fafc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.15s ease;
+}
+
+.qty-btn:hover {
+  background: #e2e8f0;
+  color: #b81c24;
+}
+
+.qty-input {
+  width: 44px;
+  height: 32px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 14px;
+}

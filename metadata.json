@@ -1,0 +1,6 @@
+{
+  "name": "Highlands Coffee",
+  "description": "Ứng dụng đặt hàng trực tuyến Highlands Coffee với giao diện Trang chủ, Đăng ký, Đăng nhập, Giỏ hàng và Tìm kiếm sản phẩm.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

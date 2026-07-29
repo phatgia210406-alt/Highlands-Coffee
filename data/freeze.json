@@ -1,0 +1,47 @@
+[
+  {
+    "id": "fr-1",
+    "name": "Freeze Trà Xanh",
+    "category": "Freeze",
+    "categoryName": "Freeze",
+    "price": 55000,
+    "badge": "BÁN CHẠY!",
+    "badgeType": "banner",
+    "image": "/assets/images/freeze-tra-xanh.webp",
+    "description": "Thức uống đá xay đậm vị Matcha Nhật Bản kết hợp thạch trà xanh dẻo giòn và lớp kem béo ngậy.",
+    "images": [
+      "/assets/images/freeze-tra-xanh.webp",
+      "/assets/images/freeze-tra-xanh1.webp"
+    ]
+  },
+  {
+    "id": "fr-2",
+    "name": "Freeze Sô-Cô-La",
+    "category": "Freeze",
+    "categoryName": "Freeze",
+    "price": 55000,
+    "badge": "BÁN CHẠY!",
+    "badgeType": "banner",
+    "image": "/assets/images/freeze-chocoate.webp",
+    "description": "Đá xay Sô-cô-la đậm đà ngọt đắng hoàn hảo hòa quyện lớp kem tươi mịn màng.",
+    "images": [
+      "/assets/images/freeze-chocoate.webp",
+      "/assets/images/freeze-chocolate1.webp"
+    ]
+  },
+  {
+    "id": "fr-3",
+    "name": "Cookies & Cream",
+    "category": "Freeze",
+    "categoryName": "Freeze",
+    "price": 55000,
+    "badge": null,
+    "badgeType": null,
+    "image": "/assets/images/freeze-cookies.webp",
+    "description": "Bánh quy sô-cô-la xay cùng đá tuyết thanh mát topped lớp kem tươi giòn rụm.",
+    "images": [
+      "/assets/images/freeze-cookies.webp",
+      "/assets/images/freeze-cookies1.jpg"
+    ]
+  }
+]

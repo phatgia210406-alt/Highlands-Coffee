@@ -1,0 +1,172 @@
+[
+  {
+    "id": "bm-1",
+    "name": "Bánh Mì Que Gà Phô Mai",
+    "category": "CAKE - BEST SELLER",
+    "categoryName": "CAKE - BEST SELLER",
+    "price": 19000,
+    "badge": null,
+    "badgeType": null,
+    "image": "/assets/images/bmq-ga-pho-mai.webp",
+    "description": "Bánh mì que giòn rụm kẹp nhân thịt gà xé đậm đà và phô mai tan chảy béo ngậy.",
+    "images": [
+      "/assets/images/bmq-ga-pho-mai.webp"
+    ]
+  },
+  {
+    "id": "bm-2",
+    "name": "Bánh Mì Que Pate",
+    "category": "CAKE - BEST SELLER",
+    "categoryName": "CAKE - BEST SELLER",
+    "price": 19000,
+    "badge": null,
+    "badgeType": null,
+    "image": "/assets/images/banhmique.webp",
+    "description": "Bánh mì que truyền thống giòn tan thơm nức vị pate gan béo ngậy đặc trưng.",
+    "images": [
+      "/assets/images/banhmique.webp"
+    ]
+  },
+  {
+    "id": "bn-3",
+    "name": "Bánh Phô Mai Trà Xanh",
+    "category": "CAKE - BEST SELLER",
+    "categoryName": "CAKE - BEST SELLER",
+    "price": 35000,
+    "badge": null,
+    "badgeType": null,
+    "image": "/assets/images/pho-mai-tra-xanh.webp",
+    "description": "Sự kết hợp giữa vị chát nhẹ của Matcha và độ béo ngậy dẻo mịn của phô mai.",
+    "images": [
+      "/assets/images/pho-mai-tra-xanh.webp"
+    ]
+  },
+  {
+    "id": "bn-4",
+    "name": "Bánh Croissant",
+    "category": "CAKE - BEST SELLER",
+    "categoryName": "CAKE - BEST SELLER",
+    "price": 29000,
+    "badge": "BÁN CHẠY!",
+    "badgeType": "banner",
+    "image": "/assets/images/croisaint.webp",
+    "description": "Bánh sừng bò ngàn lớp giòn xốp thơm lừng vị bơ Pháp cao cấp.",
+    "images": [
+      "/assets/images/croisaint.webp"
+    ]
+  },
+  {
+    "id": "bn-6",
+    "name": "Bánh Chuối",
+    "category": "CAKE - BEST SELLER",
+    "categoryName": "CAKE - BEST SELLER",
+    "price": 29000,
+    "badge": "BÁN CHẠY!",
+    "badgeType": "banner",
+    "image": "/assets/images/banh-chuoi.webp",
+    "description": "Bánh chuối nướng thơm lừng chuẩn vị truyền thống ngọt dịu nồng nàn.",
+    "images": [
+      "/assets/images/banh-chuoi.webp"
+    ]
+  },
+  {
+    "id": "bn-1",
+    "name": "Bánh Kem Tiramisu",
+    "category": "CAKE - BEST SELLER",
+    "categoryName": "CAKE - BEST SELLER",
+    "price": 45000,
+    "badge": null,
+    "badgeType": null,
+    "image": "/assets/images/banh-tiramisu.webp",
+    "description": "Bánh kem Tiramisu dạng hũ thơm nồng hương cà phê và lớp phô mai mascarpone béo ngậy.",
+    "images": [
+      "/assets/images/banh-tiramisu.webp",
+      "/assets/images/banhkemtiramisu.webp"
+    ]
+  },
+  {
+    "id": "bn-2",
+    "name": "Bánh Kem Hương Dâu",
+    "category": "CAKE - BEST SELLER",
+    "categoryName": "CAKE - BEST SELLER",
+    "price": 45000,
+    "badge": null,
+    "badgeType": null,
+    "image": "/assets/images/banhkemhuongdau.webp",
+    "description": "Bánh kem hũ vị dâu tây tươi ngọt ngào thanh mát hòa cùng cốt bánh mềm xốp.",
+    "images": [
+      "/assets/images/banhkemhuongdau.webp"
+    ]
+  },
+  {
+    "id": "bn-5",
+    "name": "Bánh Tiramisu",
+    "category": "CAKE - BEST SELLER",
+    "categoryName": "CAKE - BEST SELLER",
+    "price": 39000,
+    "badge": "THỬ NGAY!",
+    "badgeType": "banner",
+    "image": "/assets/images/banh-tiramisu.webp",
+    "description": "Bánh Tiramisu truyền thống mềm mịn đắng nhẹ vị cacao đượm hương cà phê.",
+    "images": [
+      "/assets/images/banh-tiramisu.webp",
+      "/assets/images/banhkemtiramisu.webp"
+    ]
+  },
+  {
+    "id": "bn-7",
+    "name": "Bánh Su Kem",
+    "category": "CAKE - BEST SELLER",
+    "categoryName": "CAKE - BEST SELLER",
+    "price": 29000,
+    "badge": "BÁN CHẠY!",
+    "badgeType": "banner",
+    "image": "/assets/images/sukem.webp",
+    "description": "Bánh su kem vỏ vàng ươm nhân kem vani sánh mịn tan chảy trong miệng.",
+    "images": [
+      "/assets/images/sukem.webp"
+    ]
+  },
+  {
+    "id": "bn-8",
+    "name": "Mousse Cacao",
+    "category": "CAKE - BEST SELLER",
+    "categoryName": "CAKE - BEST SELLER",
+    "price": 35000,
+    "badge": null,
+    "badgeType": null,
+    "image": "/assets/images/mousse-ca-cao.webp",
+    "description": "Lớp mousse cacao đắng nhẹ béo ngậy mềm mượt tan trên đầu lưỡi.",
+    "images": [
+      "/assets/images/mousse-ca-cao.webp"
+    ]
+  },
+  {
+    "id": "bn-9",
+    "name": "Bánh Phô Mai Chanh Dây",
+    "category": "CAKE - BEST SELLER",
+    "categoryName": "CAKE - BEST SELLER",
+    "price": 35000,
+    "badge": null,
+    "badgeType": null,
+    "image": "/assets/images/pho-mai-chanh-day.webp",
+    "description": "Lớp sốt chanh dây chua ngọt hài hòa cùng vị phô mai béo đậm đà.",
+    "images": [
+      "/assets/images/pho-mai-chanh-day.webp"
+    ]
+  },
+  {
+    "id": "bn-11",
+    "name": "Bánh Phô Mai Caramel",
+    "category": "CAKE - BEST SELLER",
+    "categoryName": "CAKE - BEST SELLER",
+    "price": 35000,
+    "badge": null,
+    "badgeType": null,
+    "image": "/assets/images/pho-mai-caramel.webp",
+    "description": "Lớp caramel ngọt đắng mượt mà phủ trên ổ phô mai béo thơm khó cưỡng.",
+    "images": [
+      "/assets/images/pho-mai-caramel.webp"
+    ]
+  }
+]

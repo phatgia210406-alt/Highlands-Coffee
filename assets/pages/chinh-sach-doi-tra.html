@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chính sách Đặt hàng | Highlands Coffee®</title>
+  
+  <!-- Google Fonts & Material Symbols -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+  
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/header.css">
+  <link rel="stylesheet" href="/assets/css/footer.css">
+  <link rel="stylesheet" href="/assets/css/cart.css">
+</head>
+<body class="is-inner-page">
+
+  <!-- Header & Navigation -->
+  <header class="main-header">
+    <div class="utility-bar">
+      <div class="container d-flex align-items-center justify-content-between">
+        <div class="d-flex align-items-center gap-4">
+          <a href="/index.html" class="d-flex align-items-center text-decoration-none">
+            <img src="/assets/images/icon_coffe.png" alt="Highlands Coffee" style="height: 44px;">
+          </a>
+          <div class="search-box d-none d-md-flex">
+            <span class="material-symbols-outlined text-secondary fs-5">search</span>
+            <input type="text" id="searchInput" placeholder="Xin chào, bạn cần gì hôm nay?">
+          </div>
+        </div>
+
+        <div class="d-flex align-items-center gap-3 gap-md-4">
+          <div class="d-none d-sm-flex align-items-center gap-2">
+            <div class="d-flex align-items-center justify-content-center rounded-circle border border-danger text-danger" style="width: 32px; height: 32px; border-width: 1.8px !important; flex-shrink: 0;">
+              <span class="material-symbols-outlined" style="font-size: 18px; color: #b81c24;">call</span>
+            </div>
+            <div class="lh-sm" style="font-size: 13px; color: #111;">
+              <div style="font-weight: 400; color: #111;">Giao tận nơi</div>
+              <div style="font-weight: 700; font-size: 14px; color: #000;">19001755</div>
+            </div>
+          </div>
+
+          <a href="/login.html" class="d-flex align-items-center gap-2 text-dark text-decoration-none">
+            <span class="material-symbols-outlined" style="font-size: 34px; color: #b81c24;">account_circle</span>
+            <div class="lh-sm d-none d-md-block" style="font-size: 13px; color: #111;">
+              <div style="font-weight: 400; color: #111;">Tài khoản</div>
+              <div style="font-size: 12px; font-weight: 400; color: #111;">Đăng nhập</div>
+            </div>
+          </a>
+
+          <button id="openCartBtn" class="d-flex align-items-center gap-2 px-3 py-1" style="background: #ffffff; border: 1.2px solid #b81c24; border-radius: 8px; cursor: pointer;">
+            <span class="material-symbols-outlined" style="color: #f0a500; font-size: 21px;">shopping_cart</span>
+            <span class="d-none d-sm-inline" style="font-size: 13px; font-weight: 400; color: #111;">Giỏ hàng</span>
+            <span id="cartBadgeCount" style="background-color: #ebdcd0; color: #8b1e22; border-radius: 4px; padding: 1px 7px; font-weight: 600; font-size: 13px; min-width: 20px; text-align: center; display: inline-flex; align-items: center; justify-content: center;">0</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Top Navbar -->
+    <nav class="top-navbar">
+      <div class="container">
+        <div class="row align-items-center g-0">
+          <div class="col-12 col-lg-3">
+            <div class="category-menu-wrapper position-relative">
+              <a href="/index.html" class="category-header-white-box text-decoration-none">
+                <div class="d-flex align-items-center gap-2">
+                  <span class="material-symbols-outlined">menu</span>
+                  <span>Danh mục sản phẩm</span>
+                </div>
+                <span class="material-symbols-outlined dropdown-arrow">expand_more</span>
+              </a>
+
+              <!-- Category Hover Dropdown Menu Popup -->
+              <div class="category-dropdown-menu" id="categoryDropdownMenu">
+                <a href="/pages/coffee.html" class="dropdown-cat-item">
+                  <span class="material-symbols-outlined cat-icon cat-icon-coffee">coffee</span>
+                  <span>Cà Phê</span>
+                </a>
+                <a href="/pages/tea.html" class="dropdown-cat-item">
+                  <span class="material-symbols-outlined cat-icon cat-icon-tea">emoji_food_beverage</span>
+                  <span>Trà</span>
+                </a>
+                <a href="/pages/freeze.html" class="dropdown-cat-item">
+                  <span class="material-symbols-outlined cat-icon cat-icon-freeze">icecream</span>
+                  <span>Freeze</span>
+                </a>
+                <a href="/pages/phindi.html" class="dropdown-cat-item">
+                  <span class="material-symbols-outlined cat-icon cat-icon-phindi">coffee_maker</span>
+                  <span>PhinĐI</span>
+                </a>
+                <a href="/pages/banh-mi-que.html" class="dropdown-cat-item">
+                  <span class="material-symbols-outlined cat-icon cat-icon-banhmi">bakery_dining</span>
+                  <span>Bánh Mì Que</span>
+                </a>
+                <a href="/pages/cake.html" class="dropdown-cat-item">
+                  <span class="material-symbols-outlined cat-icon cat-icon-cake">cake</span>
+                  <span>Bánh Ngọt</span>
+                </a>
+                <a href="/pages/drinks.html" class="dropdown-cat-item">
+                  <span class="material-symbols-outlined cat-icon cat-icon-drinks">local_bar</span>
+                  <span>Thức Uống Khác</span>
+                </a>
+                <a href="/pages/matcha.html" class="dropdown-cat-item">
+                  <span class="material-symbols-outlined cat-icon cat-icon-matcha">eco</span>
+                  <span>MatchaĐI</span>
+                </a>
+                
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-9 d-flex align-items-center gap-4 justify-content-end py-2 ps-3">
+            <a href="/pages/chinh-sach-doi-tra.html" class="top-navbar-link active"><span class="material-symbols-outlined fs-5">redeem</span><span>Chính sách đổi trả</span></a>
+            <a href="#lien-he" class="top-navbar-link">
+              <span class="material-symbols-outlined fs-5">location_on</span>
+              <span>Liên hệ</span>
+            </a>
+            <a href="/pages/bankrista.html" class="top-navbar-link">
+              <span class="material-symbols-outlined fs-5">campaign</span>
+              <span>Bankrista Thịnh Vượng</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container my-4">
+    <!-- Breadcrumb -->
+    <nav class="category-breadcrumb mb-3">
+      <a href="/index.html" class="text-decoration-none text-secondary">Trang chủ</a> / <span class="fw-bold text-dark">Chính sách Đặt hàng | Highlands Coffee®</span>
+    </nav>
+
+    <!-- Page Title -->
+    <h1 class="fw-bold fs-2 my-4 text-dark">Chính sách Đặt hàng | Highlands Coffee®</h1>
+
+    <!-- Section Main Header -->
+    <h2 class="fw-bold fs-3 mb-4" style="color: #b81c24;">Chính sách đặt hàng</h2>
+
+    <!-- Policy Content Container -->
+    <div class="policy-content bg-white p-4 rounded shadow-sm border">
+      
+      <!-- Section 1 -->
+      <h5 class="fw-bold fs-5 mt-2 mb-3" style="color: #b81c24;">1. Phạm vi giao hàng và vận chuyển</h5>
+      <p class="text-dark lh-lg mb-4" style="font-size: 15px;">
+        Trong tháng 10/2023, Highlands Coffee® hỗ trợ đặt hàng trên website <a href="https://www.order.highlandscoffee.com.vn" target="_blank" class="text-primary text-decoration-underline">www.order.highlandscoffee.com.vn</a> và giao hàng trên địa bàn Tp.Hồ Chí Minh. Tùy theo tình tình thực tế, các chính sách đặt hàng và giao hàng sẽ có sự thay đổi và khách hàng sẽ nhận được thông tin cập nhật trên website.
+      </p>
+
+      <!-- Section 2 -->
+      <h5 class="fw-bold fs-5 mt-4 mb-3" style="color: #b81c24;">2. Chính sách hoàn trả hàng và hoàn tiền</h5>
+      <p class="text-dark lh-lg mb-2" style="font-size: 15px;">
+        Quý Khách Hàng có quyền hoàn trả sản phẩm (đối với Thức uống/Bánh/Sản phẩm Trà, Cà Phê đóng gói và sản phẩm Ly/Bình giữ nhiệt) nếu đơn hàng/sản phẩm gặp vấn đề trong các trường hợp sau:
+      </p>
+      <p class="ps-3 mb-2 text-dark" style="font-size: 15px;">(1) Sản phẩm bị hư hỏng, không còn nguyên vẹn trong quá trình vận chuyển từ nhà cung cấp;</p>
+      <p class="ps-3 mb-3 text-dark" style="font-size: 15px;">(2) Sản phẩm có vấn đề về chất lượng sau khi được kiểm tra và xác thực thông tin phản ánh là chính xác.</p>
+      
+      <p class="fw-bold mb-2 text-dark" style="font-size: 15px;">Lưu ý:</p>
+      <ul class="text-dark lh-lg ps-4 mb-4" style="font-size: 15px;">
+        <li class="mb-2">Highlands Coffee chưa thể hỗ trợ các yêu cầu trả hàng/ hoàn tiền với các lý do liên quan đến cảm quan/ không hài lòng/ thay đổi quyết định mua hàng hoặc thông tin phản ánh chưa chính xác.</li>
+        <li class="mb-2">Thời hạn để gửi yêu cầu đổi trả sản phẩm kể từ ngày nhận hàng là <b>24 giờ</b>. Đối với ngành hàng Thức uống/Bánh ngọt, thời hạn gửi yêu cầu là <b>trong ngày</b> kể từ ngày nhận hàng cho đến khi kết thúc ca làm việc cuối ngày của cửa hàng.</li>
+        <li class="mb-2">Quý Khách Hàng phải lưu giữ hóa đơn mua hàng và sản phẩm cần yêu cầu đổi trả.</li>
+      </ul>
+
+      <!-- Section 3 -->
+      <h5 class="fw-bold fs-5 mt-4 mb-3" style="color: #b81c24;">3. Chính sách đổi trả, đền bù</h5>
+      <ul class="text-dark lh-lg ps-4 mb-4" style="font-size: 15px;">
+        <li class="mb-2">Trường hợp những sản phẩm có vấn đề về chất lượng, Highlands Coffee® sẽ thu hồi và thực hiện 1 đổi 1 sản phẩm cùng loại cho Quý Khách Hàng ngay tại cửa hàng mà Quý Khách Hàng đã mua sản phẩm đó.</li>
+        <li class="mb-2">Nếu sản phẩm cùng loại để đổi cho Quý Khách Hàng không có sẵn, chúng tôi có thể đổi sang sản phẩm có giá trị tương đương tại thời điểm đổi hàng hoặc hoàn trả tiền mặt cho Quý Khách Hàng sau khi thực hiện trừ các chi phí khấu hao (nếu có).</li>
+        <li class="mb-2">Về phía Quý Khách Hàng, hiện trạng sản phẩm hoàn trả lại phải tương tự như thời điểm nhận hàng, Khách hàng phải cung cấp được mã đặt hàng hoặc hóa đơn mua hàng của sản phẩm cần đổi trả Chúng tôi sẽ tiến hành trừ phí khấu hao tại thời điểm đổi hàng nếu sản phẩm không giống với hiện trạng ban đầu.</li>
+      </ul>
+
+      <!-- Section 4 -->
+      <h5 class="fw-bold fs-5 mt-4 mb-3" style="color: #b81c24;">4. Quy trình đổi trả hàng và hoàn tiền</h5>
+      <p class="text-dark lh-lg mb-3" style="font-size: 15px;">Quý Khách Hàng vui lòng thực hiện theo các bước sau để gửi thông tin phản ánh về sản phẩm</p>
+      <div class="ps-2 mb-4" style="font-size: 15px;">
+        <p class="mb-2"><b>Bước 1:</b> Liên hệ qua các kênh đã được thông báo tại Điều 8 hoặc trực tiếp cửa hàng đã mua sản phẩm để cung cấp thông tin phản ánh. Hãy cung cấp các thông tin sau:</p>
+        <ul class="text-dark ps-4 mb-3">
+          <li class="mb-1">Mã đơn đặt hàng/ Hóa đơn mua hàng; và/hoặc</li>
+          <li class="mb-1">Hình ảnh sản phẩm/ Video (hình ảnh/ video rõ ràng về phần Quý Khách Hàng muốn khiếu nại).</li>
+        </ul>
+        <p class="mb-3"><b>Bước 2:</b> Highlands Coffee® tiếp nhận phản hồi của Quý Khách Hàng trong vòng 24 giờ và tiến hành kiểm tra yêu cầu trả hàng để xác định tính thoả đáng và chính xác của yêu cầu.</p>
+        <p class="mb-3"><b>Bước 3:</b> Sau khi kiểm tra, Highlands Coffee® sẽ tiến hành liên hệ trực tiếp với Quý Khách Hàng để thỏa thuận phương án đổi hàng theo chính sách Điều 3.</p>
+      </div>
+
+      <!-- Section 5 -->
+      <h5 class="fw-bold fs-5 mt-4 mb-3" style="color: #b81c24;">5. Chính sách người dùng</h5>
+      <p class="text-dark lh-lg mb-2" style="font-size: 15px;">Mỗi số điện thoại chỉ tạo được một (01) tài khoản cho mục đích sử dụng cá nhân.</p>
+      <p class="text-dark lh-lg mb-3" style="font-size: 15px;">Để đảm bảo quyền lợi, Quý Khách Hàng cam kết không chia sẻ thông tin tài khoản (bao gồm tên truy cập và mật khẩu) cho người khác hoặc chuyển nhượng tài khoản cho bất kỳ ai khác mà không có sự đồng ý của Highlands Coffee®.</p>
+      <p class="text-dark lh-lg mb-2" style="font-size: 15px;">Highlands Coffee® có quyền vô hiệu hoá hoặc tạm ngừng một phần tính năng của tài khoản của khách hàng nếu phát hiện vi phạm điều khoản hoặc chính sách của công ty, hoặc có hành vi mua hàng không trung thực, điển hình như:</p>
+      <ul class="text-dark lh-lg ps-4 mb-3" style="font-size: 15px;">
+        <li class="mb-1">Tạo các đơn hàng ảo hoặc đánh giá giả mạo;</li>
+        <li class="mb-1">Có dấu hiệu lừa đảo hoặc lạm dụng các mã giảm giá và chương trình khuyến mãi để trục lợi;</li>
+        <li class="mb-1">Các trường hợp khác mà hệ thống của chúng tôi phát hiện. Trong mỗi trường hợp, Highlands Coffee® sẽ áp dụng các biện pháp thích hợp, bao gồm việc vô hiệu hoá tài khoản tạm thời hoặc vĩnh viễn mà không cần thông báo trước.</li>
+      </ul>
+      <p class="text-dark lh-lg mb-4" style="font-size: 15px;">
+        Khi Quý Khách Hàng hoàn thành quá trình xác minh qua các chứng từ/ thông tin cung cấp, chứng minh việc mua hàng (như hóa đơn, hình ảnh sản phẩm đã mua, v.v.) và có sự đồng thuận giữa khách hàng và Highlands Coffee®, tài khoản bị vô hiệu hoá hoặc tạm ngừng sẽ được khôi phục lại.
+      </p>
+
+      <!-- Section 6 -->
+      <h5 class="fw-bold fs-5 mt-4 mb-3" style="color: #b81c24;">6. Phương thức thanh toán</h5>
+      <p class="text-dark lh-lg mb-2" style="font-size: 15px;">Hiện tại, Highlands Coffee® chỉ chấp nhận phương thức thanh toán khi đặt hàng, bao gồm:</p>
+      <ul class="text-dark lh-lg ps-4 mb-2" style="font-size: 15px;">
+        <li>Thanh toán bằng tiền mặt.</li>
+      </ul>
+      <p class="text-dark lh-lg mb-4" style="font-size: 15px;">
+        Các kênh thanh toán sẽ được điều chỉnh và thay đổi trong tương lai để cải thiện tiện ích cho khách hàng. Các thay đổi về phương thức thanh toán sẽ được thông báo đến Quý Khách Hàng để đảm bảo sự thuận tiện khi trong quá trình sử dụng dịch vụ.
+      </p>
+
+      <!-- Section 7 -->
+      <h5 class="fw-bold fs-5 mt-4 mb-3" style="color: #b81c24;">7. Phí vận chuyển</h5>
+      <p class="text-dark lh-lg mb-2" style="font-size: 15px;">Highlands Coffee® Chúng tôi áp dụng các mức phí giao hàng như sau:</p>
+      <ul class="text-dark lh-lg ps-4 mb-2" style="font-size: 15px;">
+        <li class="mb-1">Miễn phí giao hàng cho tất cả hóa đơn từ 99.000đ trong bán kính từ 0km đến 5km tính từ vị trí giao hàng.</li>
+        <li class="mb-1">Áp dụng phí giao hàng mặc định 10.000đ cho tất cả các đơn hàng dưới 99.000đ trong bán kính từ 0km đến 5km tính từ vị trí giao hàng.</li>
+      </ul>
+      <p class="text-dark lh-lg mb-4" style="font-size: 15px;">Chính sách phí giao hàng có thể thay đổi trong tương lai và sẽ thông báo cho Quý Khách Hàng khi có cập nhật về chính sách này</p>
+
+      <!-- Section 8 -->
+      <h5 class="fw-bold fs-5 mt-4 mb-3" style="color: #b81c24;">8. Hình thức đặt hàng</h5>
+      <p class="text-dark lh-lg mb-2" style="font-size: 15px;">Các hình thức đặt hàng:</p>
+      <ul class="text-dark lh-lg ps-4 mb-2" style="font-size: 15px;">
+        <li class="mb-2">Trên website: Tham khảo thông tin tại <a href="https://www.order.highlandscoffee.com.vn" target="_blank" class="text-primary text-decoration-underline">www.order.highlandscoffee.com.vn</a></li>
+        <li class="mb-2">Đặt hàng, liên hệ qua hotline <b>1900 1755</b> và thanh toán bằng tiền mặt.</li>
+      </ul>
+
+    </div>
+  </main>
+
+  <!-- Cart Drawer -->
+  <div id="cartBackdrop" class="cart-backdrop"></div>
+  <aside id="cartDrawer" class="cart-drawer">
+    <div class="cart-drawer-header">
+      <h5 class="fw-bold m-0 d-flex align-items-center gap-2">
+        <span class="material-symbols-outlined text-danger">shopping_bag</span>
+        Giỏ Hàng Của Bạn
+      </h5>
+      <button id="closeCartBtn" class="btn-close"></button>
+    </div>
+    <div id="cartDrawerList" class="cart-drawer-body">
+      <!-- Items dynamically populated -->
+    </div>
+    <div class="cart-drawer-footer">
+      <div class="d-flex align-items-center justify-content-between mb-3">
+        <span class="fw-bold text-secondary">Tổng cộng:</span>
+        <span id="cartDrawerTotal" class="fw-bold text-danger fs-5">0đ</span>
+      </div>
+      <a href="/pages/checkout.html" class="btn btn-highlands w-100 py-2 fw-bold text-uppercase">Thanh Toán Ngay</a>
+    </div>
+  </aside>
+
+  <!-- Footer -->
+  <footer id="lien-he" class="main-footer">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Col 1 -->
+        <div class="col-12 col-md-3">
+          <div class="footer-brand-title">HIGHLANDS COFFEE</div>
+          <p class="text-secondary small">Highlands Coffee® Order tự hào là nhà phân phối hợp lệ cho tất cả các sản phẩm mang thương hiệu Highlands Coffee®. Chúng tôi kết nối cộng đồng qua hương vị cà phê đậm đà bản sắc Việt.</p>
+        </div>
+
+        <!-- Col 2 -->
+        <div class="col-12 col-md-3">
+          <h6>LIÊN HỆ</h6>
+          <p class="mb-1 text-secondary">📍 125–127 Nguyễn Cơ Thạch, Quận 2, TP. Hồ Chí Minh</p>
+          <p class="mb-1 text-secondary">📞 1900 1755</p>
+          <p class="mb-0 text-secondary">🌐 highlandscoffee.com.vn</p>
+        </div>
+
+        <!-- Col 3 -->
+        <div class="col-12 col-md-3">
+          <h6>Hỗ trợ</h6>
+          <a href="/login.html" class="footer-link">Đăng nhập</a>
+          <a href="/register.html" class="footer-link">Đăng ký</a>
+          <a href="/pages/cart.html" class="footer-link">Giỏ hàng</a>
+          <a href="/pages/chinh-sach-doi-tra.html" class="footer-link">Chính sách đổi trả</a>
+        </div>
+
+        <!-- Col 4 -->
+        <div class="col-12 col-md-3">
+          <h6>ĐĂNG KÝ NHẬN TIN</h6>
+          <p class="text-secondary small mb-2">Nhận những ưu đãi mới nhất từ chúng tôi.</p>
+          <div class="newsletter-input-group">
+            <input type="email" placeholder="Email của bạn">
+            <button type="button">Gửi</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="border-top border-secondary mt-4 pt-3 text-center text-secondary small">
+        © 2026 Highlands Coffee. Tất cả quyền được bảo lưu.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/assets/js/menu.js"></script>
+  <script src="/assets/js/app.js"></script>
+  <script src="/assets/js/search.js"></script>
+  <script src="/assets/js/product.js"></script>
+</body>
+</html>

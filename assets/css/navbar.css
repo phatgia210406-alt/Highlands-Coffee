@@ -1,0 +1,269 @@
+/* ==========================================================================
+   TOP NAVBAR & CATEGORY DROPDOWN MENU
+   Highlands Coffee 2-State Navigation System:
+   - State 1: Homepage (.is-homepage) -> Left Sidebar permanently visible next to banner slider, Header box fixed.
+   - State 2: Inner Pages (.is-inner-page) -> Left Sidebar hidden, Header box becomes hover dropdown trigger overlaying content with z-index.
+   ========================================================================== */
+
+/* Top Navbar Container */
+.top-navbar {
+  background-color: #b81c24;
+  color: #ffffff;
+  padding: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  position: relative;
+  z-index: 1020;
+}
+
+/* Category Menu Wrapper */
+.category-menu-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+/* White Category Trigger Header Box */
+.category-header-white-box {
+  background-color: #ffffff;
+  color: #b81c24;
+  font-weight: 700;
+  font-size: 14.5px;
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  border-radius: 6px 6px 0 0;
+  border: 1px solid #e0e0e0;
+  border-bottom: none;
+  width: 100%;
+  box-sizing: border-box;
+  text-decoration: none;
+  cursor: pointer;
+  user-select: none;
+  margin-top: 4px;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.category-header-white-box:hover {
+  background-color: #fafafa;
+  color: #90091c;
+}
+
+.category-header-white-box .material-symbols-outlined {
+  color: #b81c24;
+  font-size: 20px;
+}
+
+.category-header-white-box .dropdown-arrow {
+  font-size: 20px;
+  margin-left: auto;
+  transition: transform 0.25s ease;
+}
+
+/* Right side navigation links in Top Navbar */
+.top-navbar-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 13.5px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: opacity 0.2s, color 0.2s;
+}
+
+.top-navbar-link:hover {
+  color: #fef08a;
+  opacity: 0.95;
+}
+
+
+/* ==========================================================================
+   DROPDOWN MENU POPUP
+   ========================================================================== */
+
+.category-dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-top: none;
+  border-radius: 0 0 16px 16px;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.12);
+  padding: 4px 0;
+  z-index: 99999;
+  
+  /* Initial hidden state with smooth transition */
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(6px);
+  transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s ease;
+  pointer-events: none;
+}
+
+/* Individual Category Menu Items */
+.dropdown-cat-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 9.5px 16px;
+  color: #2d3748;
+  font-weight: 600;
+  font-size: 13.5px;
+  text-decoration: none;
+  border-bottom: 1px solid #f8fafc;
+  transition: all 0.15s ease;
+}
+
+.dropdown-cat-item:last-child {
+  border-bottom: none;
+}
+
+.dropdown-cat-item:hover,
+.dropdown-cat-item.active {
+  background-color: #f8fafc;
+  color: #b81c24;
+  padding-left: 20px;
+}
+
+.dropdown-cat-item .cat-icon {
+  font-size: 20px;
+  width: 22px;
+  height: 22px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: transform 0.15s ease;
+}
+
+.dropdown-cat-item:hover .cat-icon {
+  transform: scale(1.15);
+}
+
+/* Cat Icon Color Variants */
+.cat-icon-coffee { color: #6f4e37; }
+.cat-icon-tea { color: #d97706; }
+.cat-icon-freeze { color: #16a34a; }
+.cat-icon-phindi { color: #854d0e; }
+.cat-icon-banhmi { color: #ca8a04; }
+.cat-icon-cake { color: #b91c1c; }
+.cat-icon-drinks { color: #2563eb; }
+.cat-icon-matcha { color: #15803d; }
+.cat-icon-tumbler { color: #0d9488; }
+.cat-icon-package { color: #9a3412; }
+.cat-icon-gift { color: #dc2626; }
+
+
+/* ==========================================================================
+   PAGE-SPECIFIC STATE CONTROLS
+   ========================================================================== */
+
+/* --- STATE 1: HOMEPAGE (TRANG CHỦ) & INNER PAGES (TRANG CON) --- */
+@media (min-width: 992px) {
+  .top-navbar .category-menu-wrapper {
+    display: block !important;
+  }
+
+  /* Bảng danh mục ẩn mặc định trên cả Trang chủ và Trang con */
+  .category-dropdown-menu {
+    opacity: 0 !important;
+    visibility: hidden !important;
+    transform: translateY(10px) !important;
+    pointer-events: none !important;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15) !important;
+    border-radius: 0 0 16px 16px !important;
+    transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  }
+
+  /* Mũi tên chỉ hướng hiển thị rõ */
+  .category-header-white-box .dropdown-arrow {
+    display: inline-block !important;
+    transition: transform 0.25s ease !important;
+  }
+}
+
+/* Hiệu ứng RÀ CHUỘT (Hover) hoặc CLICK MỞ menu trên cả Desktop & Mobile */
+.category-menu-wrapper:hover .category-dropdown-menu,
+.category-menu-wrapper.is-open .category-dropdown-menu {
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: translateY(0) !important;
+  pointer-events: auto !important;
+}
+
+.category-menu-wrapper:hover .dropdown-arrow,
+.category-menu-wrapper.is-open .dropdown-arrow {
+  transform: rotate(180deg) !important;
+  color: #b81c24 !important;
+}
+
+/* --- STATE 3: DESKTOP RESPONSIVE ADJUSTMENTS --- */
+@media (min-width: 992px) {
+  /* Chỉnh sửa bề ngang hẹp lại cho bảng danh mục sản phẩm */
+  .category-menu-wrapper {
+    width: 250px !important;
+  }
+
+  /* Chỉnh sửa chiều dài bảng danh mục bằng với viền của tấm hình bên cạnh trên trang chủ */
+  body.is-homepage .category-dropdown-menu {
+    height: 456px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+    padding: 8px 0 !important;
+  }
+
+  /* Đảm bảo các item trải đều và đẹp mắt */
+  body.is-homepage .category-dropdown-menu .dropdown-cat-item {
+    flex: 1 !important;
+    display: flex !important;
+    align-items: center !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
+  /* Căn chỉnh cột trong top-navbar khớp chính xác với chiều rộng 250px của danh mục */
+  .top-navbar .col-lg-3 {
+    width: 250px !important;
+    flex: 0 0 250px !important;
+  }
+  .top-navbar .col-lg-9 {
+    width: calc(100% - 250px) !important;
+    flex: 0 0 calc(100% - 250px) !important;
+  }
+
+  /* Khi danh mục là menu rà chuột (hover overlay), cột spacer không cần giữ chỗ nữa */
+  body.is-homepage main.container .row:has(.hero-banner-container) .col-lg-3 {
+    display: none !important;
+  }
+
+  body.is-homepage main.container .row:has(.hero-banner-container) .col-lg-9 {
+    width: 100% !important;
+    flex: 0 0 100% !important;
+  }
+
+  /* Định hình kích thước cho hero banner dựa trên tỷ lệ ảnh gốc (1137x639 ~ 16:9) */
+  .hero-banner-container {
+    height: auto !important;
+    min-height: auto !important;
+    max-height: none !important;
+    width: 100% !important;
+    aspect-ratio: 1137 / 639 !important;
+  }
+
+  .hero-banner-img {
+    height: 100% !important;
+    min-height: auto !important;
+    max-height: none !important;
+    width: 100% !important;
+    object-fit: cover !important;
+    object-position: center !important;
+  }
+}
+
+
+
+

@@ -1,0 +1,90 @@
+@import "./variables.css";
+@import "./reset.css";
+@import "./header.css";
+@import "./navbar.css";
+@import "./sidebar.css";
+@import "./banner.css";
+@import "./home.css";
+@import "./category.css";
+@import "./product-detail.css";
+@import "./cart.css";
+@import "./checkout.css";
+@import "./auth.css";
+@import "./footer.css";
+@import "./button.css";
+@import "./animation.css";
+@import "./search.css";
+@import "./responsive.css";
+
+/* Global overrides */
+body {
+  font-family: var(--font-main);
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+}
+
+.brand-text {
+  color: var(--primary-color);
+}
+
+.bg-highlands {
+  background-color: var(--primary-color) !important;
+}
+
+.btn-highlands {
+  background-color: var(--primary-color);
+  color: var(--white);
+  font-weight: 700;
+  border-radius: var(--radius-md);
+  padding: 8px 16px;
+  transition: all 0.2s ease;
+}
+
+.btn-highlands:hover {
+  background-color: var(--primary-hover);
+  color: var(--white);
+}
+
+.badge-sale {
+  background-color: #ef4444;
+  color: #ffffff;
+}
+
+.badge-try {
+  background-color: #3b82f6;
+  color: #ffffff;
+}
+
+.badge-discount {
+  background-color: #eab308;
+  color: #000000;
+}
+
+/* ====================================================
+   GLOBAL PRODUCT CARD IMAGE HOVER EFFECT
+   ==================================================== */
+.product-thumb-wrapper,
+.cat-product-img-wrapper {
+  overflow: hidden !important;
+}
+
+.product-thumb,
+.cat-product-img,
+.product-thumb-wrapper img,
+.cat-product-img-wrapper img {
+  transform-origin: center !important;
+  transition: transform 0.4s cubic-bezier(.4, 0, .2, 1) !important;
+  will-change: transform;
+}
+
+/* On hover over product card, shrink product image smoothly */
+.product-card:hover .product-thumb,
+.product-card:hover .product-thumb-wrapper img,
+.cat-product-card:hover .cat-product-img,
+.cat-product-card:hover .cat-product-img-wrapper img,
+.product-card-item:hover .cat-product-img,
+.product-card-item:hover .product-thumb,
+.product-card-item:hover img {
+  transform: scale(0.82) !important;
+}
+

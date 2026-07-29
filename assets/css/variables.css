@@ -1,0 +1,18 @@
+:root {
+  --primary-color: #90091c;
+  --primary-hover: #780717;
+  --primary-light: #f8fafc;
+  --primary-border: #e2e8f0;
+  --secondary-color: #4B2C20;
+  --text-dark: #261817;
+  --text-muted: #59413f;
+  --bg-light: #ffffff;
+  --white: #ffffff;
+  --shadow-sm: 0 2px 8px rgba(144, 9, 28, 0.08);
+  --shadow-md: 0 4px 16px rgba(144, 9, 28, 0.12);
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-full: 9999px;
+  --font-main: 'Plus Jakarta Sans', 'Work Sans', sans-serif;
+}

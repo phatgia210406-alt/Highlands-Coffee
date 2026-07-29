@@ -1,0 +1,152 @@
+[
+  {
+    "id": "tra-1",
+    "name": "Trà Sen Vàng (Củ Năng)",
+    "category": "Trà",
+    "categoryName": "Trà",
+    "price": 45000,
+    "badge": "BÁN CHẠY!",
+    "badgeType": "banner",
+    "image": "/assets/images/Tra_sen_vang(cn).webp",
+    "description": "Sen Bùi, Kem Mịn - Hương trà ô long kết hợp cùng củ năng giòn ngọt và lớp kem béo ngậy.",
+    "images": [
+      "/assets/images/Tra_sen_vang(cn).webp",
+      "/assets/images/tra_sen_vang(cn)1.webp"
+    ]
+  },
+  {
+    "id": "tra-2",
+    "name": "Trà Sen Vàng (Sen)",
+    "category": "Trà",
+    "categoryName": "Trà",
+    "price": 45000,
+    "badge": "BÁN CHẠY!",
+    "badgeType": "banner",
+    "image": "/assets/images/tra-sen-vang-sen.webp",
+    "description": "Sen Bùi, Kem Mịn - Hương trà ô long thanh mát kết hợp cùng hạt sen bùi dẻo và lớp kem béo.",
+    "images": [
+      "/assets/images/tra-sen-vang-sen.webp",
+      "/assets/images/tra-sen-vang-sen1.webp"
+    ]
+  },
+  {
+    "id": "tra-3",
+    "name": "Trà Thạch Đào",
+    "category": "Trà",
+    "categoryName": "Trà",
+    "price": 45000,
+    "badge": "THỬ NGAY!",
+    "badgeType": "banner",
+    "image": "/assets/images/tra-thach-dao.webp",
+    "description": "Trà đào thơm ngon ngọt dịu cùng miếng thạch đào giòn sần sật.",
+    "images": [
+      "/assets/images/tra-thach-dao.webp",
+      "/assets/images/tra-thach-dao1.webp"
+    ]
+  },
+  {
+    "id": "tra-4",
+    "name": "Trà Thanh Đào",
+    "category": "Trà",
+    "categoryName": "Trà",
+    "price": 45000,
+    "badge": null,
+    "badgeType": null,
+    "image": "/assets/images/tra-thanh-dao.webp",
+    "description": "Vị trà thanh nhẹ kết hợp miếng đào tươi mọng nước mát lạnh.",
+    "images": [
+      "/assets/images/tra-thanh-dao.webp",
+      "/assets/images/tra-thanh-dao1.webp"
+    ]
+  },
+  {
+    "id": "tra-5",
+    "name": "Trà Thạch Vải",
+    "category": "Trà",
+    "categoryName": "Trà",
+    "price": 45000,
+    "badge": null,
+    "badgeType": null,
+    "image": "/assets/images/tra-thach-vai.webp",
+    "description": "Trà ngát hương vải dịu ngọt kèm thạch vải dẻo giòn xua tan cái nóng.",
+    "images": [
+      "/assets/images/tra-thach-vai.webp",
+      "/assets/images/tra-thach-vai1.webp"
+    ]
+  },
+  {
+    "id": "tra-6",
+    "name": "Trà Xanh Đậu Đỏ",
+    "category": "Trà",
+    "categoryName": "Trà",
+    "price": 45000,
+    "badge": null,
+    "badgeType": null,
+    "image": "/assets/images/tra-xanh-dau-do.webp",
+    "description": "Trà xanh đắng nhẹ thanh mát kết hợp cùng đậu đỏ bùi ngọt.",
+    "images": [
+      "/assets/images/tra-xanh-dau-do.webp",
+      "/assets/images/tra-xanh-dau-do1.webp"
+    ]
+  },
+  {
+    "id": "tra-7",
+    "name": "Trà Sen Vàng (Sen) Nóng",
+    "category": "Trà",
+    "categoryName": "Trà",
+    "price": 45000,
+    "badge": null,
+    "badgeType": null,
+    "image": "/assets/images/tra-sen-vang-sen-nong.webp",
+    "description": "Trà ô long sen vàng ấm nóng nồng nàn vị hạt sen bùi dịu.",
+    "images": [
+      "/assets/images/tra-sen-vang-sen-nong.webp",
+      "/assets/images/tra-sen-vang-sen-nong1.webp"
+    ]
+  },
+  {
+    "id": "tra-8",
+    "name": "Trà Thanh Đào Nóng",
+    "category": "Trà",
+    "categoryName": "Trà",
+    "price": 45000,
+    "badge": null,
+    "badgeType": null,
+    "image": "/assets/images/tra-thanh-dao-nong.webp",
+    "description": "Hương trà đào ấm áp dễ chịu dịu nhẹ cho ngày thư thái.",
+    "images": [
+      "/assets/images/tra-thanh-dao-nong.webp",
+      "/assets/images/tra-thanh-dao-nong1.webp"
+    ]
+  },
+  {
+    "id": "tra-9",
+    "name": "Trà Thạch Vải Nóng",
+    "category": "Trà",
+    "categoryName": "Trà",
+    "price": 45000,
+    "badge": null,
+    "badgeType": null,
+    "image": "/assets/images/tra-thach-vai-nong.webp",
+    "description": "Hương vải thơm mát hòa quyện trong làn hơi nước ấm áp.",
+    "images": [
+      "/assets/images/tra-thach-vai-nong.webp",
+      "/assets/images/tra-thach-vai-nong1.webp"
+    ]
+  },
+  {
+    "id": "tra-10",
+    "name": "Trà Xanh Đậu Đỏ Nóng",
+    "category": "Trà",
+    "categoryName": "Trà",
+    "price": 45000,
+    "badge": null,
+    "badgeType": null,
+    "image": "/assets/images/tra-xanh-dau-do-nong.webp",
+    "description": "Trà xanh thơm đượm vị hòa cùng đậu đỏ dẻo bùi ấm lòng.",
+    "images": [
+      "/assets/images/tra-xanh-dau-do-nong.webp",
+      "/assets/images/tra-xanh-dau-do-nong1.webp"
+    ]
+  }
+]

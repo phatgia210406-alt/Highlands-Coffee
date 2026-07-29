@@ -1,0 +1,47 @@
+[
+  {
+    "id": "pd-1",
+    "name": "Phindi Hạnh Nhân",
+    "category": "PhinDi",
+    "categoryName": "PhinDi",
+    "price": 45000,
+    "badge": "BÁN CHẠY!",
+    "badgeType": "banner",
+    "image": "/assets/images/phindi-hanh-nhan.webp",
+    "description": "Cà phê Phin thế hệ mới kết hợp cùng hạnh nhân thơm bùi, mang lại trải nghiệm mới lạ khó cưỡng.",
+    "images": [
+      "/assets/images/phindi-hanh-nhan.webp",
+      "/assets/images/phindi-hanh-nhan1.webp"
+    ]
+  },
+  {
+    "id": "pd-2",
+    "name": "PhinĐi Kem Sữa",
+    "category": "PhinDi",
+    "categoryName": "PhinDi",
+    "price": 45000,
+    "badge": "THỬ NGAY!",
+    "badgeType": "banner",
+    "image": "/assets/images/phindi-kem-sua.webp",
+    "description": "Một trải nghiệm cà phê Phin êm dịu, ngọt ngào cùng lớp kem sữa sánh mịn béo ngậy.",
+    "images": [
+      "/assets/images/phindi-kem-sua.webp",
+      "/assets/images/phindi-kem-sua1.webp"
+    ]
+  },
+  {
+    "id": "pd-3",
+    "name": "PhinĐi Choco",
+    "category": "PhinDi",
+    "categoryName": "PhinDi",
+    "price": 45000,
+    "badge": "THỬ NGAY!",
+    "badgeType": "banner",
+    "image": "/assets/images/phindi-choco.webp",
+    "description": "Sự kết hợp hoàn hảo giữa vị đậm đà của cà phê Phin truyền thống và vị đắng nhẹ ngọt ngào của sô-cô-la.",
+    "images": [
+      "/assets/images/phindi-choco.webp",
+      "/assets/images/phindi-choco-1.webp"
+    ]
+  }
+]

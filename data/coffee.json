@@ -1,0 +1,225 @@
+[
+  {
+    "id": "cp-1",
+    "name": "Phin Sữa Đá",
+    "category": "Cà Phê",
+    "categoryName": "Cà Phê",
+    "price": 29000,
+    "badge": "BÁN CHẠY!",
+    "badgeType": "banner",
+    "image": "/assets/images/phinsuada.webp",
+    "description": "Hương vị trứ danh pha từ hạt cà phê Robusta & Arabica chọn lọc.",
+    "images": [
+      "/assets/images/phinsuada.webp",
+      "/assets/images/phin-sua-da1.webp"
+    ]
+  },
+  {
+    "id": "cp-2",
+    "name": "Phin Đen Đá",
+    "category": "Cà Phê",
+    "categoryName": "Cà Phê",
+    "price": 29000,
+    "badge": "BÁN CHẠY!",
+    "badgeType": "banner",
+    "image": "/assets/images/phin-den-da.webp",
+    "description": "Dành cho tín đồ yêu thích vị cà phê nguyên chất sảng khoái.",
+    "images": [
+      "/assets/images/phin-den-da.webp",
+      "/assets/images/phin-den-da1.webp"
+    ]
+  },
+  {
+    "id": "cp-3",
+    "name": "Bạc Xỉu Đá",
+    "category": "Cà Phê",
+    "categoryName": "Cà Phê",
+    "price": 29000,
+    "badge": "THỬ NGAY!",
+    "badgeType": "banner",
+    "image": "/assets/images/bac-xiu-da.webp",
+    "description": "Nhẹ nhàng thanh dịu cho buổi sáng tỉnh táo nhẹ nhàng.",
+    "images": [
+      "/assets/images/bac-xiu-da.webp",
+      "/assets/images/bac-xiu-da1.webp"
+    ]
+  },
+  {
+    "id": "cp-4",
+    "name": "Latte đá",
+    "category": "Cà Phê",
+    "categoryName": "Cà Phê",
+    "price": 55000,
+    "badge": "GIÁ MỚI THỬ NGAY!",
+    "badgeType": "circle",
+    "image": "/assets/images/latte-da.webp",
+    "description": "Hạt Espresso đậm vị kết hợp sữa tươi mềm mại mát lạnh.",
+    "images": [
+      "/assets/images/latte-da.webp"
+    ]
+  },
+  {
+    "id": "cp-5",
+    "name": "Latte Nóng",
+    "category": "Cà Phê",
+    "categoryName": "Cà Phê",
+    "price": 55000,
+    "badge": "GIÁ MỚI THỬ NGAY!",
+    "badgeType": "circle",
+    "image": "/assets/images/latte-nong.webp",
+    "description": "Espresso thơm lừng hòa cùng bọt sữa mịn màng nóng hổi.",
+    "images": [
+      "/assets/images/latte-nong.webp",
+      "/assets/images/latte-nong1.webp"
+    ]
+  },
+  {
+    "id": "cp-6",
+    "name": "Cappuccino Đá",
+    "category": "Cà Phê",
+    "categoryName": "Cà Phê",
+    "price": 55000,
+    "badge": "GIÁ MỚI THỬ NGAY!",
+    "badgeType": "circle",
+    "image": "/assets/images/Cappuccino-da.webp",
+    "description": "Vị cà phê Ý thơm đậm kết hợp cùng lớp bọt béo ngậy đá sảng khoái.",
+    "images": [
+      "/assets/images/Cappuccino-da.webp",
+      "/assets/images/Cappuccino-da1.webp"
+    ]
+  },
+  {
+    "id": "cp-7",
+    "name": "Cappuccino Nóng",
+    "category": "Cà Phê",
+    "categoryName": "Cà Phê",
+    "price": 55000,
+    "badge": "GIÁ MỚI THỬ NGAY!",
+    "badgeType": "circle",
+    "image": "/assets/images/cappuccino-nong.webp",
+    "description": "Thơm béo ấm áp với lớp bọt sữa vẽ hình tỉ mỉ.",
+    "images": [
+      "/assets/images/cappuccino-nong.webp",
+      "/assets/images/cappuccino-nong1.webp"
+    ]
+  },
+  {
+    "id": "cp-8",
+    "name": "Americano Đá",
+    "category": "Cà Phê",
+    "categoryName": "Cà Phê",
+    "price": 45000,
+    "badge": null,
+    "badgeType": null,
+    "image": "/assets/images/Americano-da.webp",
+    "description": "Espresso pha loãng cùng đá lạnh, giữ trọn hương thanh nhẹ.",
+    "images": [
+      "/assets/images/Americano-da.webp",
+      "/assets/images/Americano-da1.webp"
+    ]
+  },
+  {
+    "id": "cp-9",
+    "name": "Americano Nóng",
+    "category": "Cà Phê",
+    "categoryName": "Cà Phê",
+    "price": 45000,
+    "badge": null,
+    "badgeType": null,
+    "image": "/assets/images/Americano-nong.webp",
+    "description": "Hương vị Espresso nguyên bản ấm nóng dễ chịu.",
+    "images": [
+      "/assets/images/Americano-nong.webp",
+      "/assets/images/Americano-nong1.webp"
+    ]
+  },
+  {
+    "id": "cp-10",
+    "name": "Caramel Macchiato",
+    "category": "Cà Phê",
+    "categoryName": "Cà Phê",
+    "price": 69000,
+    "badge": "THỬ NGAY!",
+    "badgeType": "banner",
+    "image": "/assets/images/caramel-macchiato.webp",
+    "description": "Sữa tươi, bọt sữa hòa quyện Espresso và xốt Caramel ngọt ngào.",
+    "images": [
+      "/assets/images/caramel-macchiato.webp",
+      "/assets/images/caramel-macchiatto1.webp"
+    ]
+  },
+  {
+    "id": "cp-11",
+    "name": "Caramel Macchiato Nóng",
+    "category": "Cà Phê",
+    "categoryName": "Cà Phê",
+    "price": 69000,
+    "badge": null,
+    "badgeType": null,
+    "image": "/assets/images/caramel-macchiato-nong.webp",
+    "description": "Xốt caramel ngọt dịu nồng nàn thơm béo.",
+    "images": [
+      "/assets/images/caramel-macchiato-nong.webp",
+      "/assets/images/caramel-macchiato-nong1.webp"
+    ]
+  },
+  {
+    "id": "cp-12",
+    "name": "Phin Sữa Nóng",
+    "category": "Cà Phê",
+    "categoryName": "Cà Phê",
+    "price": 29000,
+    "badge": null,
+    "badgeType": null,
+    "image": "/assets/images/Phin-xiu-nong.webp",
+    "description": "Cà phê phin truyền thống đậm đà kết hợp sữa đặc ngọt béo ấm nóng.",
+    "images": [
+      "/assets/images/Phin-xiu-nong.webp",
+      "/assets/images/Phin-xiu-nong1.webp"
+    ]
+  },
+  {
+    "id": "cp-13",
+    "name": "Phin Đen Nóng",
+    "category": "Cà Phê",
+    "categoryName": "Cà Phê",
+    "price": 29000,
+    "badge": null,
+    "badgeType": null,
+    "image": "/assets/images/phin-den-nong.webp",
+    "description": "Cà phê phin nguyên chất đậm đà chuẩn gu Việt.",
+    "images": [
+      "/assets/images/phin-den-nong.webp",
+      "/assets/images/phin-den-nong1.jpg"
+    ]
+  },
+  {
+    "id": "cp-14",
+    "name": "Espresso Nóng",
+    "category": "Cà Phê",
+    "categoryName": "Cà Phê",
+    "price": 45000,
+    "badge": null,
+    "badgeType": null,
+    "image": "/assets/images/espresso-nong.webp",
+    "description": "Trích xuất đậm đặc nguyên bản từ những hạt cà phê cao cấp.",
+    "images": [
+      "/assets/images/espresso-nong.webp",
+      "/assets/images/espresso-nong1.jpg"
+    ]
+  },
+  {
+    "id": "cp-15",
+    "name": "Bạc Xỉu Nóng",
+    "category": "Cà Phê",
+    "categoryName": "Cà Phê",
+    "price": 29000,
+    "badge": null,
+    "badgeType": null,
+    "image": "/assets/images/bac-xiu-nong.webp",
+    "description": "Sữa nóng ngọt ngào thơm thoảng hương vị cà phê phin.",
+    "images": [
+      "/assets/images/bac-xiu-nong.webp"
+    ]
+  }
+]

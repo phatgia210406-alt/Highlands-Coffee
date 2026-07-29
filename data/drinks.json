@@ -1,0 +1,123 @@
+[
+  {
+    "id": "other-5",
+    "name": "Sô Cô La Đá",
+    "category": "drinks",
+    "categoryName": "Thức Uống Khác",
+    "price": 59000,
+    "badge": null,
+    "badgeType": null,
+    "image": "/assets/images/socola-da.webp",
+    "description": "Sô-cô-la đá mát lạnh ngọt ngào béo ngậy phủ lớp kem tươi ngon ngất ngây.",
+    "images": [
+      "/assets/images/socola-da.webp",
+      "/assets/images/socola-da1.webp"
+    ]
+  },
+  {
+    "id": "other-1",
+    "name": "Chanh Dây Đá Viên",
+    "category": "drinks",
+    "categoryName": "Thức Uống Khác",
+    "price": 49000,
+    "badge": null,
+    "badgeType": null,
+    "image": "/assets/images/chanh-day-da-vien.webp",
+    "description": "Vị chanh dây chua ngọt tươi mát mọng nước xua tan cái nóng bứt ranh.",
+    "images": [
+      "/assets/images/chanh-day-da-vien.webp",
+      "/assets/images/chanh-day-da-vien1.webp"
+    ]
+  },
+  {
+    "id": "other-2",
+    "name": "Tắc/Quất Đá Viên",
+    "category": "drinks",
+    "categoryName": "Thức Uống Khác",
+    "price": 49000,
+    "badge": null,
+    "badgeType": null,
+    "image": "/assets/images/tacdavien.webp",
+    "description": "Nước tắc tươi thơm lừng vị sảng khoái mát lạnh cực đã.",
+    "images": [
+      "/assets/images/tacdavien.webp",
+      "/assets/images/tac-da-vien1.webp"
+    ]
+  },
+  {
+    "id": "other-3",
+    "name": "Chanh Đá Xay",
+    "category": "drinks",
+    "categoryName": "Thức Uống Khác",
+    "price": 49000,
+    "badge": null,
+    "badgeType": null,
+    "image": "/assets/images/chanh-da-xay.webp",
+    "description": "Chanh tươi đá xay mát lạnh cực độ đánh tan cơn khát.",
+    "images": [
+      "/assets/images/chanh-da-xay.webp",
+      "/assets/images/chanh-da-xay1.webp"
+    ]
+  },
+  {
+    "id": "other-4",
+    "name": "Chanh Đá Viên",
+    "category": "drinks",
+    "categoryName": "Thức Uống Khác",
+    "price": 49000,
+    "badge": null,
+    "badgeType": null,
+    "image": "/assets/images/chanh-da-vien.webp",
+    "description": "Nước chanh tươi sảng khoái với lát chanh mọng nước thanh mát.",
+    "images": [
+      "/assets/images/chanh-da-vien.webp",
+      "/assets/images/chanh-da-vien1.webp"
+    ]
+  },
+  {
+    "id": "other-6",
+    "name": "Sữa Tươi Nóng",
+    "category": "drinks",
+    "categoryName": "Thức Uống Khác",
+    "price": 49000,
+    "badge": null,
+    "badgeType": null,
+    "image": "/assets/images/sua-tuoi-nong.webp",
+    "description": "Sữa tươi ấm nóng ngọt dịu bồi bổ năng lượng nhẹ nhàng cho ngày mới.",
+    "images": [
+      "/assets/images/sua-tuoi-nong.webp",
+      "/assets/images/sua-tuoi-nong1.webp"
+    ]
+  },
+  {
+    "id": "other-7",
+    "name": "Chanh Nóng",
+    "category": "drinks",
+    "categoryName": "Thức Uống Khác",
+    "price": 49000,
+    "badge": null,
+    "badgeType": null,
+    "image": "/assets/images/chanh-nong.webp",
+    "description": "Chanh nóng ấm áp dạt dào vitamin C giúp thanh lọc cơ thể.",
+    "images": [
+      "/assets/images/chanh-nong.webp",
+      "/assets/images/chanh-nong.webp"
+      
+    ]
+  },
+  {
+    "id": "other-8",
+    "name": "Sô Cô La Nóng",
+    "category": "drinks",
+    "categoryName": "Thức Uống Khác",
+    "price": 59000,
+    "badge": null,
+    "badgeType": null,
+    "image": "/assets/images/socola-nong.webp",
+    "description": "Sô-cô-la nóng nồng nàn thơm phức ngọt ngào ấm lòng.",
+    "images": [
+      "/assets/images/socola-nong.webp",
+      "/assets/images/socola-nong1.webp"
+    ]
+  }
+]

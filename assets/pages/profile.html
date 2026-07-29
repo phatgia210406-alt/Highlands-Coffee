@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trang Khách Hàng | Highlands Coffee</title>
+
+  <!-- Google Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Application Styles -->
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/header.css">
+  <link rel="stylesheet" href="/assets/css/footer.css">
+  
+  <style>
+    body {
+      background-color: #f8f9fa;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+    .profile-sidebar {
+      background: #fff;
+      border-right: 1px solid #dee2e6;
+      padding: 24px;
+      min-height: 450px;
+    }
+    .profile-menu-title {
+      font-weight: 700;
+      font-size: 16px;
+      text-transform: uppercase;
+      color: #111;
+      margin-bottom: 16px;
+      letter-spacing: 0.5px;
+    }
+    .profile-greeting {
+      font-size: 15px;
+      margin-bottom: 20px;
+      color: #333;
+    }
+    .profile-greeting span {
+      color: #b81c24;
+      font-weight: 700;
+    }
+    .profile-nav-link {
+      display: block;
+      padding: 10px 0;
+      color: #333;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      border-bottom: 1px solid #f1f1f1;
+      transition: all 0.2s;
+    }
+    .profile-nav-link:hover, .profile-nav-link.active {
+      color: #b81c24;
+      padding-left: 6px;
+    }
+    .profile-content {
+      background: #fff;
+      padding: 30px;
+      min-height: 450px;
+      border-radius: 4px;
+    }
+    .profile-content h3 {
+      font-weight: 700;
+      font-size: 20px;
+      text-transform: uppercase;
+      color: #111;
+      margin-bottom: 20px;
+      letter-spacing: 0.5px;
+    }
+    .breadcrumb-area {
+      font-size: 13px;
+      color: #666;
+      padding: 12px 0;
+      background: #fff;
+      border-bottom: 1px solid #eee;
+      margin-bottom: 30px;
+    }
+    .breadcrumb-area a {
+      color: #666;
+      text-decoration: none;
+    }
+    .breadcrumb-area a:hover {
+      color: #b81c24;
+    }
+    .btn-highlands {
+      background-color: #b81c24;
+      color: #fff;
+      font-weight: 600;
+      border: none;
+      padding: 10px 24px;
+      border-radius: 6px;
+      transition: background 0.2s;
+    }
+    .btn-highlands:hover {
+      background-color: #96151c;
+      color: #fff;
+    }
+    .modal-backdrop-custom {
+      position: fixed;
+      top: 0; left: 0; width: 100%; height: 100%;
+      background: rgba(0,0,0,0.5);
+      z-index: 1050;
+      display: none;
+      align-items: center;
+      justify-content: center;
+    }
+    .modal-backdrop-custom.show {
+      display: flex;
+    }
+    .custom-modal-box {
+      background: #fff;
+      width: 100%;
+      max-width: 650px;
+      border-radius: 8px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+      overflow: hidden;
+      animation: modalFadeIn 0.3s ease;
+    }
+    @keyframes modalFadeIn {
+      from { transform: translateY(-20px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+  </style>
+</head>
+<body class="is-inner-page">
+
+  <!-- Header -->
+  <header class="main-header">
+    <div class="utility-bar">
+      <div class="container d-flex align-items-center justify-content-between">
+        <div class="d-flex align-items-center gap-4">
+          <a href="/index.html" class="d-flex align-items-center text-decoration-none">
+            <img src="/assets/images/icon_coffe.png" alt="Highlands Coffee" style="height: 44px;">
+          </a>
+          <div class="search-box d-none d-md-flex">
+            <span class="material-symbols-outlined text-secondary fs-5">search</span>
+            <input type="text" id="searchInput" placeholder="Xin chào, bạn cần gì hôm nay?">
+          </div>
+        </div>
+
+        <div class="d-flex align-items-center gap-3 gap-md-4">
+          <div class="d-none d-sm-flex align-items-center gap-2">
+            <div class="d-flex align-items-center justify-content-center rounded-circle border border-danger text-danger" style="width: 32px; height: 32px; border-width: 1.8px !important; flex-shrink: 0;">
+              <span class="material-symbols-outlined" style="font-size: 18px; color: #b81c24;">call</span>
+            </div>
+            <div class="lh-sm" style="font-size: 13px; color: #111;">
+              <div style="font-weight: 400; color: #111;">Giao tận nơi</div>
+              <div style="font-weight: 700; font-size: 14px; color: #000;">19001755</div>
+            </div>
+          </div>
+
+          <a href="/pages/profile.html" class="d-flex align-items-center gap-2 text-dark text-decoration-none">
+            <span class="material-symbols-outlined" style="font-size: 34px; color: #b81c24;">account_circle</span>
+            <div class="lh-sm d-none d-md-block" style="font-size: 13px; color: #111;" id="accountHeaderInfo">
+              <div style="font-weight: 400; color: #111;">Tài khoản</div>
+              <div style="font-size: 12px; font-weight: 400; color: #b81c24;">Nhật Trương</div>
+            </div>
+          </a>
+
+          <a href="/pages/cart.html" class="d-flex align-items-center gap-2 px-3 py-1 text-decoration-none" style="background: #ffffff; border: 1.2px solid #b81c24; border-radius: 8px;">
+            <span class="material-symbols-outlined" style="color: #f0a500; font-size: 21px;">shopping_cart</span>
+            <span class="d-none d-sm-inline" style="font-size: 13px; font-weight: 400; color: #111;">Giỏ hàng</span>
+            <span id="cartBadgeCount" style="background-color: #ebdcd0; color: #8b1e22; border-radius: 4px; padding: 1px 7px; font-weight: 600; font-size: 13px; min-width: 20px; text-align: center; display: inline-flex; align-items: center; justify-content: center;">0</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Top Navbar -->
+    <nav class="top-navbar">
+      <div class="container">
+        <div class="row align-items-center g-0">
+          <div class="col-12 col-lg-3">
+            <div class="category-menu-wrapper position-relative">
+              <a href="/index.html" class="category-header-white-box text-decoration-none">
+                <div class="d-flex align-items-center gap-2">
+                  <span class="material-symbols-outlined">menu</span>
+                  <span>Danh mục sản phẩm</span>
+                </div>
+                <span class="material-symbols-outlined dropdown-arrow">expand_more</span>
+              </a>
+
+              <!-- Category Hover Dropdown Menu Popup -->
+              <div class="category-dropdown-menu" id="categoryDropdownMenu">
+                <a href="/pages/coffee.html" class="dropdown-cat-item">
+                  <span class="material-symbols-outlined cat-icon cat-icon-coffee">coffee</span>
+                  <span>Cà Phê</span>
+                </a>
+                <a href="/pages/tea.html" class="dropdown-cat-item">
+                  <span class="material-symbols-outlined cat-icon cat-icon-tea">emoji_food_beverage</span>
+                  <span>Trà</span>
+                </a>
+                <a href="/pages/freeze.html" class="dropdown-cat-item">
+                  <span class="material-symbols-outlined cat-icon cat-icon-freeze">icecream</span>
+                  <span>Freeze</span>
+                </a>
+                <a href="/pages/phindi.html" class="dropdown-cat-item">
+                  <span class="material-symbols-outlined cat-icon cat-icon-phindi">coffee_maker</span>
+                  <span>PhinĐI</span>
+                </a>
+                <a href="/pages/banh-mi-que.html" class="dropdown-cat-item">
+                  <span class="material-symbols-outlined cat-icon cat-icon-banhmi">bakery_dining</span>
+                  <span>Bánh Mì Que</span>
+                </a>
+                <a href="/pages/cake.html" class="dropdown-cat-item">
+                  <span class="material-symbols-outlined cat-icon cat-icon-cake">cake</span>
+                  <span>Bánh Ngọt</span>
+                </a>
+                <a href="/pages/drinks.html" class="dropdown-cat-item">
+                  <span class="material-symbols-outlined cat-icon cat-icon-drinks">local_bar</span>
+                  <span>Thức Uống Khác</span>
+                </a>
+                <a href="/pages/matcha.html" class="dropdown-cat-item">
+                  <span class="material-symbols-outlined cat-icon cat-icon-matcha">eco</span>
+                  <span>MatchaĐI</span>
+                </a>
+                
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-9 d-flex align-items-center gap-4 justify-content-end py-2 ps-3">
+            <a href="/pages/chinh-sach-doi-tra.html" class="top-navbar-link"><span class="material-symbols-outlined fs-5">redeem</span><span>Chính sách đổi trả</span></a>
+            <a href="#lien-he" class="top-navbar-link">
+              <span class="material-symbols-outlined fs-5">location_on</span>
+              <span>Liên hệ</span>
+            </a>
+            <a href="/pages/bankrista.html" class="top-navbar-link">
+              <span class="material-symbols-outlined fs-5">campaign</span>
+              <span>Bankrista Thịnh Vượng</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Breadcrumb -->
+  <div class="breadcrumb-area">
+    <div class="container">
+      <a href="/index.html">Trang chủ</a> / <span id="breadcrumbCurrent">Trang khách hàng</span>
+    </div>
+  </div>
+
+  <!-- Main Profile Container -->
+  <main class="container mb-5">
+    <div class="row g-0 shadow-sm rounded bg-white overflow-hidden">
+      <!-- Left Sidebar -->
+      <div class="col-12 col-md-3 profile-sidebar">
+        <div class="profile-menu-title">Trang Tài Khoản</div>
+        <div class="profile-greeting">
+          Xin chào, <span id="sidebarUserName">Nhật Trương</span> !
+        </div>
+        <div class="d-flex flex-column gap-1">
+          <a href="#" class="profile-nav-link active" data-tab="info">Thông tin tài khoản</a>
+          <a href="#" class="profile-nav-link" data-tab="orders">Đơn hàng của bạn</a>
+          <a href="#" class="profile-nav-link" data-tab="password">Đổi mật khẩu</a>
+          <a href="#" class="profile-nav-link" data-tab="addresses">Sổ địa chỉ (<span id="addressCountBadge">0</span>)</a>
+          <a href="/index.html" class="profile-nav-link text-danger mt-3" id="logoutBtn">Đăng xuất</a>
+        </div>
+      </div>
+
+      <!-- Right Content Area -->
+      <div class="col-12 col-md-9 profile-content">
+        <!-- TAB 1: THÔNG TIN TÀI KHOẢN -->
+        <div class="profile-tab-pane" id="tab-info">
+          <h3>Thông tin tài khoản</h3>
+          <div class="mb-3">
+            <label class="form-label text-secondary small fw-bold">Họ tên</label>
+            <div class="fs-6 fw-semibold text-dark" id="infoFullName">Nhật Trương</div>
+          </div>
+          <div class="mb-3">
+            <label class="form-label text-secondary small fw-bold">Email</label>
+            <div class="fs-6 text-dark" id="infoEmail">nhatminh2910206@gmail.com</div>
+          </div>
+          <div class="mb-3">
+            <label class="form-label text-secondary small fw-bold">Số điện thoại</label>
+            <div class="fs-6 text-dark" id="infoPhone">0901234567</div>
+          </div>
+        </div>
+
+        <!-- TAB 2: ĐƠN HÀNG CỦA BẠN -->
+        <div class="profile-tab-pane d-none" id="tab-orders">
+          <h3>Đơn hàng của bạn</h3>
+          <div class="table-responsive">
+            <table class="table align-middle">
+              <thead class="table-light">
+                <tr>
+                  <th style="font-size: 13px;">Đơn hàng</th>
+                  <th style="font-size: 13px;">Ngày</th>
+                  <th style="font-size: 13px;">Địa chỉ</th>
+                  <th style="font-size: 13px;">Giá trị đơn hàng</th>
+                  <th style="font-size: 13px;">TT thanh toán</th>
+                  <th style="font-size: 13px;">TT vận chuyển</th>
+                </tr>
+              </thead>
+              <tbody id="ordersTableBody">
+                <tr>
+                  <td colspan="6" class="text-secondary py-4 text-center">Không có đơn hàng nào.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- TAB 3: ĐỔI MẬT KHẨU -->
+        <div class="profile-tab-pane d-none" id="tab-password">
+          <h3>Đổi mật khẩu</h3>
+          <p class="text-secondary small mb-4">Để đảm bảo tính bảo mật vui lòng đặt mật khẩu với ít nhất 8 kí tự</p>
+          <form id="changePasswordForm" style="max-width: 500px;">
+            <div class="mb-3">
+              <label class="form-label small fw-bold">Mật khẩu cũ <span class="text-danger">*</span></label>
+              <input type="password" class="form-control" id="oldPassword" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label small fw-bold">Mật khẩu mới <span class="text-danger">*</span></label>
+              <input type="password" class="form-control" id="newPassword" required minlength="8">
+            </div>
+            <div class="mb-3">
+              <label class="form-label small fw-bold">Xác nhận lại mật khẩu <span class="text-danger">*</span></label>
+              <input type="password" class="form-control" id="confirmPassword" required minlength="8">
+            </div>
+            <button type="submit" class="btn btn-highlands">Đặt lại mật khẩu</button>
+          </form>
+        </div>
+
+        <!-- TAB 4: SỔ ĐỊA CHỈ -->
+        <div class="profile-tab-pane d-none" id="tab-addresses">
+          <div class="d-flex align-items-center justify-content-between mb-4">
+            <h3>Sổ địa chỉ (<span id="addressCountHeader">0</span>)</h3>
+            <button type="button" class="btn btn-highlands btn-sm" id="openAddAddressModalBtn">
+              + Thêm địa chỉ mới
+            </button>
+          </div>
+          <div id="addressListContainer">
+            <p class="text-secondary">Chưa có địa chỉ nào được lưu.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Add Address Modal (Matching User UI Screenshot) -->
+  <div class="modal-backdrop-custom" id="addressModal">
+    <div class="custom-modal-box p-4">
+      <div class="d-flex align-items-center justify-content-between border-bottom pb-3 mb-3">
+        <h5 class="fw-bold m-0 text-dark">THÊM ĐỊA CHỈ MỚI</h5>
+        <button type="button" class="btn-close" id="closeAddressModalBtn" aria-label="Close"></button>
+      </div>
+      <form id="addAddressForm">
+        <div class="row g-3">
+          <div class="col-12">
+            <input type="text" class="form-control" id="addrFullName" placeholder="Họ tên" required>
+          </div>
+          <div class="col-12">
+            <input type="tel" class="form-control" id="addrPhone" placeholder="Số điện thoại" required>
+          </div>
+          <div class="col-12">
+            <input type="text" class="form-control" id="addrCompany" placeholder="Công ty">
+          </div>
+          <div class="col-12">
+            <input type="text" class="form-control" id="addrStreet" placeholder="Địa chỉ (số nhà, tên đường)" required>
+          </div>
+          <div class="col-12">
+            <select class="form-select" id="addrCountry">
+              <option value="Vietnam">Vietnam</option>
+            </select>
+          </div>
+          <div class="col-12 col-md-4">
+            <select class="form-select" id="addrCity">
+              <option value="TP Hồ Chí Minh">TP Hồ Chí Minh</option>
+              <option value="Hà Nội">Hà Nội</option>
+              <option value="Đà Nẵng">Đà Nẵng</option>
+            </select>
+          </div>
+          <div class="col-12 col-md-4">
+            <select class="form-select" id="addrDistrict">
+              <option value="">-- Quận huyện --</option>
+              <option value="Quận 1">Quận 1</option>
+              <option value="Quận 2">Quận 2</option>
+              <option value="Quận 3">Quận 3</option>
+              <option value="Thành phố Thủ Đức">Thành phố Thủ Đức</option>
+              <option value="Quận Bình Thạnh">Quận Bình Thạnh</option>
+            </select>
+          </div>
+          <div class="col-12 col-md-4">
+            <input type="text" class="form-control" id="addrWard" placeholder="Phường xã">
+          </div>
+          <div class="col-12">
+            <input type="text" class="form-control" id="addrZip" placeholder="Mã Zip">
+          </div>
+          <div class="col-12">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="addrDefaultCheckbox">
+              <label class="form-check-label small" for="addrDefaultCheckbox">
+                Đặt là địa chỉ mặc định?
+              </label>
+            </div>
+          </div>
+          <div class="col-12 d-flex justify-content-end gap-2 mt-4">
+            <button type="button" class="btn btn-outline-secondary px-4" id="cancelAddressBtn">Hủy</button>
+            <button type="submit" class="btn btn-highlands px-4">Thêm địa chỉ</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer id="lien-he" class="main-footer">
+  <div class="container">
+    <div class="row g-4">
+      <!-- Col 1 -->
+      <div class="col-12 col-md-3">
+        <div class="footer-brand-title">HIGHLANDS COFFEE</div>
+        <p class="text-secondary small">Highlands Coffee® Order tự hào là nhà phân phối hợp lệ cho tất cả các sản phẩm mang thương hiệu Highlands Coffee®. Chúng tôi kết nối cộng đồng qua hương vị cà phê đậm đà bản sắc Việt.</p>
+      </div>
+
+      <!-- Col 2 -->
+      <div class="col-12 col-md-3">
+        <h6>LIÊN HỆ</h6>
+        <p class="mb-1 text-secondary">📍 125–127 Nguyễn Cơ Thạch, Quận 2, TP. Hồ Chí Minh</p>
+        <p class="mb-1 text-secondary">📞 1900 1755</p>
+        <p class="mb-0 text-secondary">🌐 highlandscoffee.com.vn</p>
+      </div>
+
+      <!-- Col 3 -->
+      <div class="col-12 col-md-3">
+        <h6>Hỗ trợ</h6>
+        <a href="/login.html" class="footer-link">Đăng nhập</a>
+        <a href="/register.html" class="footer-link">Đăng ký</a>
+        <a href="/pages/cart.html" class="footer-link">Giỏ hàng</a>
+      </div>
+
+      <!-- Col 4 -->
+      <div class="col-12 col-md-3">
+        <h6>ĐĂNG KÝ NHẬN TIN</h6>
+        <p class="text-secondary small mb-2">Nhận những ưu đãi mới nhất từ chúng tôi.</p>
+        <div class="newsletter-input-group">
+          <input type="email" placeholder="Email của bạn">
+          <button type="button">Gửi</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="border-top border-secondary mt-4 pt-3 text-center text-secondary small">
+      © 2026 Highlands Coffee. Tất cả quyền được bảo lưu.
+    </div>
+  </div>
+</footer>
+
+  <!-- Bootstrap & Script -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/assets/js/app.js"></script>
+  <script src="/assets/js/search.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Tab switching logic
+      const navLinks = document.querySelectorAll('.profile-nav-link[data-tab]');
+      const tabPanes = document.querySelectorAll('.profile-tab-pane');
+      const breadcrumbCurrent = document.getElementById('breadcrumbCurrent');
+
+      const tabTitles = {
+        'info': 'Thông tin tài khoản',
+        'orders': 'Đơn hàng của bạn',
+        'password': 'Đổi mật khẩu',
+        'addresses': 'Sổ địa chỉ'
+      };
+
+      navLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+          const tabId = this.getAttribute('data-tab');
+          if (!tabId) return;
+          e.preventDefault();
+
+          navLinks.forEach(l => l.classList.remove('active'));
+          this.classList.add('active');
+
+          tabPanes.forEach(pane => pane.classList.add('d-none'));
+          const targetPane = document.getElementById('tab-' + tabId);
+          if (targetPane) {
+            targetPane.classList.remove('d-none');
+          }
+
+          if (breadcrumbCurrent && tabTitles[tabId]) {
+            breadcrumbCurrent.textContent = tabTitles[tabId];
+          }
+        });
+      });
+
+      // Load user info from localStorage
+      const userStr = localStorage.getItem('currentUser') || localStorage.getItem('highlands_user');
+      if (!userStr) {
+        window.location.href = '/login.html';
+        return;
+      }
+
+      let savedUser = {};
+      try {
+        savedUser = JSON.parse(userStr) || {};
+      } catch (e) {
+        window.location.href = '/login.html';
+        return;
+      }
+
+      const displayName = savedUser.name || `${savedUser.firstName || ''} ${savedUser.lastName || ''}`.trim() || 'Thành viên';
+      if (document.getElementById('sidebarUserName')) document.getElementById('sidebarUserName').textContent = displayName;
+      if (document.getElementById('infoFullName')) document.getElementById('infoFullName').textContent = displayName;
+      if (savedUser.email && document.getElementById('infoEmail')) {
+        document.getElementById('infoEmail').textContent = savedUser.email;
+      }
+      if (savedUser.phone && document.getElementById('infoPhone')) {
+        document.getElementById('infoPhone').textContent = savedUser.phone;
+      }
+
+      // Explicitly bind logout button
+      const logoutBtn = document.getElementById('logoutBtn');
+      if (logoutBtn) {
+        logoutBtn.addEventListener('click', function(e) {
+          e.preventDefault();
+          if (typeof handleLogout === 'function') {
+            handleLogout(e);
+          } else {
+            localStorage.removeItem('currentUser');
+            localStorage.removeItem('highlands_user');
+            localStorage.removeItem('user');
+            alert('Đăng xuất thành công!');
+            window.location.href = '/index.html';
+          }
+        });
+      }
+
+      // Load Orders
+      loadUserOrders();
+
+      // Load Addresses
+      loadAddresses();
+
+      // Change Password Handling
+      const passwordForm = document.getElementById('changePasswordForm');
+      if (passwordForm) {
+        passwordForm.addEventListener('submit', function(e) {
+          e.preventDefault();
+          const newPass = document.getElementById('newPassword').value;
+          const confirmPass = document.getElementById('confirmPassword').value;
+
+          if (newPass.length < 8) {
+            alert('Mật khẩu mới phải có ít nhất 8 kí tự.');
+            return;
+          }
+          if (newPass !== confirmPass) {
+            alert('Xác nhận mật khẩu mới không khớp.');
+            return;
+          }
+
+          alert('Đổi mật khẩu thành công!');
+          passwordForm.reset();
+        });
+      }
+
+      // Address Modal Handling
+      const addressModal = document.getElementById('addressModal');
+      const openModalBtn = document.getElementById('openAddAddressModalBtn');
+      const closeModalBtn = document.getElementById('closeAddressModalBtn');
+      const cancelAddressBtn = document.getElementById('cancelAddressBtn');
+      const addAddressForm = document.getElementById('addAddressForm');
+
+      function openModal() { addressModal.classList.add('show'); }
+      function closeModal() { addressModal.classList.remove('show'); addAddressForm.reset(); }
+
+      if (openModalBtn) openModalBtn.addEventListener('click', openModal);
+      if (closeModalBtn) closeModalBtn.addEventListener('click', closeModal);
+      if (cancelAddressBtn) cancelAddressBtn.addEventListener('click', closeModal);
+
+      if (addressModal) {
+        addressModal.addEventListener('click', function(e) {
+          if (e.target === addressModal) closeModal();
+        });
+      }
+
+      if (addAddressForm) {
+        addAddressForm.addEventListener('submit', function(e) {
+          e.preventDefault();
+          const newAddr = {
+            id: 'addr-' + Date.now(),
+            fullName: document.getElementById('addrFullName').value,
+            phone: document.getElementById('addrPhone').value,
+            company: document.getElementById('addrCompany').value,
+            street: document.getElementById('addrStreet').value,
+            country: document.getElementById('addrCountry').value,
+            city: document.getElementById('addrCity').value,
+            district: document.getElementById('addrDistrict').value,
+            ward: document.getElementById('addrWard').value,
+            zip: document.getElementById('addrZip').value,
+            isDefault: document.getElementById('addrDefaultCheckbox').checked
+          };
+
+          let addresses = JSON.parse(localStorage.getItem('highlands_addresses') || '[]');
+          if (newAddr.isDefault) {
+            addresses.forEach(a => a.isDefault = false);
+          }
+          if (addresses.length === 0) {
+            newAddr.isDefault = true;
+          }
+          addresses.push(newAddr);
+          localStorage.setItem('highlands_addresses', JSON.stringify(addresses));
+
+          closeModal();
+          loadAddresses();
+          alert('Thêm địa chỉ mới thành công!');
+        });
+      }
+    });
+
+    function loadUserOrders() {
+      const tbody = document.getElementById('ordersTableBody');
+      const orders = JSON.parse(localStorage.getItem('highlands_orders') || '[]');
+      if (orders.length === 0) {
+        tbody.innerHTML = `<tr><td colspan="6" class="text-secondary py-4 text-center">Không có đơn hàng nào.</td></tr>`;
+        return;
+      }
+      let html = '';
+      orders.forEach((o, index) => {
+        html += `
+          <tr>
+            <td><strong class="text-danger">#${o.id || (1000 + index)}</strong></td>
+            <td>${o.date || new Date().toLocaleDateString('vi-VN')}</td>
+            <td>${o.address || '125 Nguyễn Cơ Thạch, Q.2, TP.HCM'}</td>
+            <td><strong>${(o.total || 0).toLocaleString('vi-VN')}đ</strong></td>
+            <td><span class="badge bg-success">Đã thanh toán</span></td>
+            <td><span class="badge bg-warning text-dark">Đang chuẩn bị</span></td>
+          </tr>
+        `;
+      });
+      tbody.innerHTML = html;
+    }
+
+    function loadAddresses() {
+      const addresses = JSON.parse(localStorage.getItem('highlands_addresses') || '[]');
+      const countBadge = document.getElementById('addressCountBadge');
+      const countHeader = document.getElementById('addressCountHeader');
+      if (countBadge) countBadge.textContent = addresses.length;
+      if (countHeader) countHeader.textContent = addresses.length;
+
+      const container = document.getElementById('addressListContainer');
+      if (!container) return;
+
+      if (addresses.length === 0) {
+        container.innerHTML = `<p class="text-secondary">Chưa có địa chỉ nào được lưu.</p>`;
+        return;
+      }
+
+      let html = '<div class="row g-3">';
+      addresses.forEach(addr => {
+        const defaultBadge = addr.isDefault ? '<span class="badge bg-danger ms-2">Địa chỉ mặc định</span>' : '';
+        html += `
+          <div class="col-12 col-md-6">
+            <div class="card border p-3 h-100 shadow-sm">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <h6 class="fw-bold mb-0">${addr.fullName} ${defaultBadge}</h6>
+                <button type="button" class="btn btn-sm text-danger p-0" onclick="deleteAddress('${addr.id}')">Xóa</button>
+              </div>
+              <p class="mb-1 small text-secondary"><strong>Điện thoại:</strong> ${addr.phone}</p>
+              <p class="mb-1 small text-secondary"><strong>Địa chỉ:</strong> ${addr.street}, ${addr.ward || ''}, ${addr.district || ''}, ${addr.city || ''}</p>
+              ${addr.company ? `<p class="mb-1 small text-secondary"><strong>Công ty:</strong> ${addr.company}</p>` : ''}
+            </div>
+          </div>
+        `;
+      });
+      html += '</div>';
+      container.innerHTML = html;
+    }
+
+    function deleteAddress(id) {
+      let addresses = JSON.parse(localStorage.getItem('highlands_addresses') || '[]');
+      addresses = addresses.filter(a => a.id !== id);
+      localStorage.setItem('highlands_addresses', JSON.stringify(addresses));
+      loadAddresses();
+    }
+  </script>
+</body>
+</html>

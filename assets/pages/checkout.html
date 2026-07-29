@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thanh Toán - Highlands Coffee®</title>
+
+  <!-- Google Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Application Styles -->
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/checkout.css">
+</head>
+<body class="bg-white py-4">
+
+  <div class="container my-2 max-w-6xl">
+
+    <!-- Top Branding Logo Text -->
+    <div class="mb-4">
+      <a href="/index.html" class="checkout-brand-title">
+        Highlands Coffee®
+      </a>
+    </div>
+
+    <form id="checkoutForm" onsubmit="handlePlaceOrder(event)" class="checkout-form">
+      <div class="row g-5">
+
+        <!-- Left Column: Shipping & Payment Information -->
+        <div class="col-lg-7">
+
+          <!-- Thông tin nhận hàng -->
+          <div class="d-flex align-items-center justify-content-between mb-3">
+            <h2 class="checkout-section-title mb-0">Thông tin nhận hàng</h2>
+            <a href="/login.html" class="checkout-login-link d-flex align-items-center gap-1">
+              <span class="material-symbols-outlined fs-5">account_circle</span>
+              <span>Đăng nhập</span>
+            </a>
+          </div>
+
+          <div class="row g-3 mb-4">
+            <!-- Email -->
+            <div class="col-12">
+              <input type="email" id="customerEmail" class="form-control" placeholder="Email" required>
+            </div>
+
+            <!-- Họ và tên -->
+            <div class="col-12">
+              <input type="text" id="customerName" class="form-control" placeholder="Họ và tên" required>
+            </div>
+
+            <!-- Số điện thoại -->
+            <div class="col-12">
+              <div class="checkout-phone-input-group">
+                <div class="country-flag-addon">
+                  <span class="me-1" style="font-size: 16px;">🇻🇳</span>
+                  <span class="material-symbols-outlined text-secondary" style="font-size: 16px;">arrow_drop_down</span>
+                </div>
+                <input type="tel" id="customerPhone" class="form-control" placeholder="Số điện thoại (tùy chọn)">
+              </div>
+            </div>
+
+            <!-- Địa chỉ -->
+            <div class="col-12">
+              <input type="text" id="customerAddress" class="form-control" placeholder="Địa chỉ (tùy chọn)">
+            </div>
+
+            <!-- Tỉnh thành -->
+            <div class="col-12">
+              <select id="provinceSelect" class="form-select" onchange="handleProvinceChange()">
+                <option value="">Tỉnh thành</option>
+                <option value="---" selected>---</option>
+                <option value="TP. Hồ Chí Minh">TP. Hồ Chí Minh</option>
+                <option value="Hà Nội">Hà Nội</option>
+                <option value="Đà Nẵng">Đà Nẵng</option>
+                <option value="Cần Thơ">Cần Thơ</option>
+                <option value="Bình Dương">Bình Dương</option>
+                <option value="Đồng Nai">Đồng Nai</option>
+                <option value="Lâm Đồng">Lâm Đồng</option>
+                <option value="Khánh Hòa">Khánh Hòa</option>
+                <option value="Hải Phòng">Hải Phòng</option>
+              </select>
+            </div>
+
+            <!-- Quận huyện -->
+            <div class="col-12">
+              <select id="districtSelect" class="form-select" onchange="handleDistrictChange()">
+                <option value="">Quận huyện (tùy chọn)</option>
+              </select>
+            </div>
+
+            <!-- Phường xã -->
+            <div class="col-12">
+              <select id="wardSelect" class="form-select">
+                <option value="">Phường xã (tùy chọn)</option>
+              </select>
+            </div>
+
+            <!-- Ghi chú -->
+            <div class="col-12">
+              <textarea id="customerNotes" class="form-control" rows="3" placeholder="Ghi chú (tùy chọn)"></textarea>
+            </div>
+          </div>
+
+          <!-- Vận chuyển -->
+          <div class="mb-4">
+            <h2 class="checkout-section-title">Vận chuyển</h2>
+            <div id="shippingInfoBox" class="checkout-shipping-box">
+              Vui lòng nhập thông tin giao hàng
+            </div>
+          </div>
+
+          <!-- Thanh toán -->
+          <div class="mb-4">
+            <h2 class="checkout-section-title">Thanh toán</h2>
+            <div class="checkout-payment-box">
+              <div class="d-flex align-items-center gap-2">
+                <input type="radio" id="paymentCod" name="paymentMethod" value="COD" checked class="form-check-input mt-0">
+                <label for="paymentCod" class="form-check-label fw-medium text-dark cursor-pointer">
+                  Thanh toán khi giao hàng (COD)
+                </label>
+              </div>
+              <span class="material-symbols-outlined text-primary fs-4">payments</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right Column: Order Summary -->
+        <div class="col-lg-5">
+          <div class="checkout-summary-card">
+
+            <h2 id="orderSummaryTitle" class="checkout-summary-title">
+              Đơn hàng (0 sản phẩm)
+            </h2>
+
+            <!-- Items List -->
+            <div id="checkoutItemsList" class="mb-3">
+              <!-- Dynamically rendered -->
+            </div>
+
+
+
+            <!-- Cost Summary -->
+            <div class="py-2 border-top">
+              <div class="d-flex justify-content-between text-secondary mb-2" style="font-size: 14px;">
+                <span>Tạm tính</span>
+                <span id="summarySubtotal">0đ</span>
+              </div>
+
+              <div class="d-flex justify-content-between text-secondary mb-2" style="font-size: 14px;">
+                <span>Phí vận chuyển</span>
+                <span id="summaryShipping">Miễn phí</span>
+              </div>
+            </div>
+
+            <div class="d-flex justify-content-between align-items-center pt-3 border-top mb-4">
+              <span class="text-secondary fs-6 fw-medium">Tổng cộng</span>
+              <span id="summaryTotal" class="checkout-total-price">0đ</span>
+            </div>
+
+            <!-- Action Row -->
+            <div class="d-flex align-items-center justify-content-between pt-2">
+              <a href="/pages/cart.html" class="link-back-cart">
+                <span class="material-symbols-outlined fs-5">chevron_left</span>
+                <span>Quay về giỏ hàng</span>
+              </a>
+
+              <button type="submit" id="btnPlaceOrder" class="btn-order-submit">
+                ĐẶT HÀNG
+              </button>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </form>
+
+  </div>
+
+  <!-- Order Success Modal -->
+  <div class="modal fade" id="orderSuccessModal" tabindex="-1" aria-hidden="true" data-bs-backdrop="static">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content border-0 shadow-lg text-center p-4">
+        <div class="modal-body">
+          <div class="d-inline-flex align-items-center justify-content-center rounded-circle bg-success-subtle text-success mb-3" style="width: 72px; height: 72px;">
+            <span class="material-symbols-outlined" style="font-size: 40px;">check_circle</span>
+          </div>
+          <h3 class="fw-bold text-dark mb-2">Đặt Hàng Thành Công!</h3>
+          <p class="text-muted small mb-3">
+            Mã đơn hàng: <strong id="modalOrderId" class="text-primary">#HLG-10293</strong>
+          </p>
+          <p class="text-secondary small mb-4">
+            Cảm ơn bạn <strong id="modalCustomerName">Quý khách</strong> đã đặt hàng tại Highlands Coffee. Chúng tôi sẽ giao hàng cho bạn trong thời gian sớm nhất.
+          </p>
+          <div class="d-grid gap-2">
+            <a href="/index.html" class="btn btn-primary py-2 fw-semibold">Quay về Trang Chủ</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/assets/js/app.js"></script>
+  <script src="/assets/js/search.js"></script>
+  <script>
+
+
+    const districtsMap = {
+      "TP. Hồ Chí Minh": ["Quận 1", "Quận 3", "Quận 4", "Quận 5", "Quận 7", "Quận 10", "TP. Thủ Đức", "Bình Thạnh", "Gò Vấp", "Tân Bình"],
+      "Hà Nội": ["Ba Đình", "Hoàn Kiếm", "Đống Đa", "Cầu Giấy", "Hai Bà Trưng", "Thanh Xuân", "Tây Hồ", "Nam Từ Liêm"],
+      "Đà Nẵng": ["Hải Châu", "Thanh Khê", "Sơn Trà", "Ngũ Hành Sơn", "Cẩm Lệ"]
+    };
+
+    const wardsMap = {
+      "Quận 1": ["Phường Bến Nghé", "Phường Bến Thành", "Phường Phạm Ngũ Lão", "Phường Tân Định", "Phường Đa Kao"],
+      "Quận 3": ["Phường Võ Thị Sáu", "Phường 1", "Phường 2", "Phường 3"],
+      "Ba Đình": ["Phường Kim Mã", "Phường Đội Cấn", "Phường Điện Biên"],
+      "Hải Châu": ["Phường Hải Châu I", "Phường Hải Châu II", "Phường Hòa Cường Bắc"]
+    };
+
+    document.addEventListener('DOMContentLoaded', function() {
+      // Load saved checkout metadata from cart page if available
+      const savedNotes = localStorage.getItem('highlands_cart_notes');
+      if (savedNotes) {
+        document.getElementById('customerNotes').value = savedNotes;
+      }
+
+      renderCheckoutSummary();
+      updateShippingBox();
+    });
+
+    function handleProvinceChange() {
+      const province = document.getElementById('provinceSelect').value;
+      const districtSelect = document.getElementById('districtSelect');
+      districtSelect.innerHTML = '<option value="">Quận huyện (tùy chọn)</option>';
+      document.getElementById('wardSelect').innerHTML = '<option value="">Phường xã (tùy chọn)</option>';
+
+      if (province && districtsMap[province]) {
+        districtsMap[province].forEach(d => {
+          districtSelect.innerHTML += `<option value="${d}">${d}</option>`;
+        });
+      }
+      updateShippingBox();
+    }
+
+    function handleDistrictChange() {
+      const district = document.getElementById('districtSelect').value;
+      const wardSelect = document.getElementById('wardSelect');
+      wardSelect.innerHTML = '<option value="">Phường xã (tùy chọn)</option>';
+
+      if (district && wardsMap[district]) {
+        wardsMap[district].forEach(w => {
+          wardSelect.innerHTML += `<option value="${w}">${w}</option>`;
+        });
+      }
+    }
+
+    function updateShippingBox() {
+      const province = document.getElementById('provinceSelect').value;
+      const shippingBox = document.getElementById('shippingInfoBox');
+      if (!shippingBox) return;
+
+      if (province && province !== '---') {
+        shippingBox.innerHTML = `
+          <div class="d-flex align-items-center justify-content-between">
+            <span>Giao hàng tận nơi</span>
+            <span class="fw-bold">Miễn phí</span>
+          </div>
+        `;
+      } else {
+        shippingBox.textContent = 'Vui lòng nhập thông tin giao hàng';
+      }
+    }
+
+    function renderCheckoutSummary() {
+      const cart = getCart();
+      const listContainer = document.getElementById('checkoutItemsList');
+      const titleEl = document.getElementById('orderSummaryTitle');
+      const subtotalEl = document.getElementById('summarySubtotal');
+      const totalEl = document.getElementById('summaryTotal');
+
+      if (!listContainer) return;
+
+      const totalItemsCount = cart.reduce((sum, item) => sum + (item.quantity || 1), 0);
+      if (titleEl) {
+        titleEl.textContent = `Đơn hàng (${totalItemsCount} sản phẩm)`;
+      }
+
+      if (cart.length === 0) {
+        listContainer.innerHTML = '<div class="text-center py-4 text-muted">Giỏ hàng của bạn đang trống</div>';
+        if (subtotalEl) subtotalEl.textContent = '0đ';
+        if (totalEl) totalEl.textContent = '0đ';
+        return;
+      }
+
+      let subtotal = 0;
+      let html = '';
+
+      cart.forEach(item => {
+        const itemPrice = typeof item.price === 'number' ? item.price : (parseInt(item.price, 10) || 0);
+        const itemTotal = itemPrice * (item.quantity || 1);
+        subtotal += itemTotal;
+
+        const sizeText = item.size ? `<div class="checkout-item-size">Size: ${item.size}</div>` : '';
+
+        html += `
+          <div class="checkout-item-row">
+            <div class="d-flex align-items-center gap-3">
+              <div class="checkout-item-img-wrapper">
+                <img src="${item.image}" alt="${item.name}" class="checkout-item-img" onerror="this.src='/assets/images/placeholder.jpg'">
+                <div class="checkout-item-qty-badge">${item.quantity || 1}</div>
+              </div>
+              <div>
+                <div class="checkout-item-name">${item.name}</div>
+                ${sizeText}
+              </div>
+            </div>
+            <div class="checkout-item-price">
+              ${itemPrice.toLocaleString('vi-VN')}đ
+            </div>
+          </div>
+        `;
+      });
+
+      listContainer.innerHTML = html;
+
+      if (subtotalEl) subtotalEl.textContent = `${subtotal.toLocaleString('vi-VN')}đ`;
+      if (totalEl) totalEl.textContent = `${subtotal.toLocaleString('vi-VN')}đ`;
+    }
+
+    function handlePlaceOrder(e) {
+      e.preventDefault();
+
+      const cart = getCart();
+      if (cart.length === 0) {
+        alert('Giỏ hàng của bạn đang trống!');
+        return;
+      }
+
+      const email = document.getElementById('customerEmail').value.trim();
+      const name = document.getElementById('customerName').value.trim();
+      const phone = document.getElementById('customerPhone').value.trim();
+      const address = document.getElementById('customerAddress').value.trim();
+      const province = document.getElementById('provinceSelect').value;
+      const district = document.getElementById('districtSelect').value;
+      const ward = document.getElementById('wardSelect').value;
+      const notes = document.getElementById('customerNotes').value.trim();
+
+      const subtotal = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+      const total = subtotal;
+
+      const orderId = 'HLG-' + Math.floor(100000 + Math.random() * 900000);
+
+      const newOrder = {
+        id: orderId,
+        date: new Date().toISOString(),
+        customer: { email, name, phone, address, province, district, ward },
+        notes: notes,
+        items: cart,
+        subtotal: subtotal,
+        discount: 0,
+        total: total,
+        paymentMethod: 'COD',
+        status: 'Chờ xác nhận'
+      };
+
+      // Save order to history
+      let orders = [];
+      try {
+        orders = JSON.parse(localStorage.getItem('highlands_orders') || '[]');
+      } catch (err) {
+        orders = [];
+      }
+      orders.unshift(newOrder);
+      localStorage.setItem('highlands_orders', JSON.stringify(orders));
+
+      // Clear Cart
+      localStorage.removeItem('highlands_cart');
+      localStorage.removeItem('cart');
+      localStorage.removeItem('highlands_cart_notes');
+      localStorage.removeItem('highlands_checkout_meta');
+      if (typeof updateCartBadge === 'function') updateCartBadge();
+
+      // Display Modal
+      document.getElementById('modalOrderId').textContent = '#' + orderId;
+      document.getElementById('modalCustomerName').textContent = name || 'Quý khách';
+
+      const successModal = new bootstrap.Modal(document.getElementById('orderSuccessModal'));
+      successModal.show();
+    }
+  </script>
+
+  <footer id="lien-he" class="main-footer">
+  <div class="container">
+    <div class="row g-4">
+      <!-- Col 1 -->
+      <div class="col-12 col-md-3">
+        <div class="footer-brand-title">HIGHLANDS COFFEE</div>
+        <p class="text-secondary small">Highlands Coffee® Order tự hào là nhà phân phối hợp lệ cho tất cả các sản phẩm mang thương hiệu Highlands Coffee®. Chúng tôi kết nối cộng đồng qua hương vị cà phê đậm đà bản sắc Việt.</p>
+      </div>
+
+      <!-- Col 2 -->
+      <div class="col-12 col-md-3">
+        <h6>LIÊN HỆ</h6>
+        <p class="mb-1 text-secondary">📍 125–127 Nguyễn Cơ Thạch, Quận 2, TP. Hồ Chí Minh</p>
+        <p class="mb-1 text-secondary">📞 1900 1755</p>
+        <p class="mb-0 text-secondary">🌐 highlandscoffee.com.vn</p>
+      </div>
+
+      <!-- Col 3 -->
+      <div class="col-12 col-md-3">
+        <h6>Hỗ trợ</h6>
+        <a href="/login.html" class="footer-link">Đăng nhập</a>
+        <a href="/register.html" class="footer-link">Đăng ký</a>
+        <a href="/pages/cart.html" class="footer-link">Giỏ hàng</a>
+      </div>
+
+      <!-- Col 4 -->
+      <div class="col-12 col-md-3">
+        <h6>ĐĂNG KÝ NHẬN TIN</h6>
+        <p class="text-secondary small mb-2">Nhận những ưu đãi mới nhất từ chúng tôi.</p>
+        <div class="newsletter-input-group">
+          <input type="email" placeholder="Email của bạn">
+          <button type="button">Gửi</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="border-top border-secondary mt-4 pt-3 text-center text-secondary small">
+      © 2026 Highlands Coffee. Tất cả quyền được bảo lưu.
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

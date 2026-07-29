@@ -1,0 +1,100 @@
+[
+  {
+    "id": "cpdg-1",
+    "name": "Cà phê rang xay Moka Highlands Coffee gói 250g",
+    "category": "Cà Phê Đóng Gói",
+    "categoryName": "Cà Phê Đóng Gói",
+    "price": 145000,
+    "oldPrice": null,
+    "badge": null,
+    "badgeType": null,
+    "image": "/assets/images/pkg_coffee.jpg",
+    "description": "Cà phê rang xay Moka thơm ngào ngạt, vị chua thanh tinh tế hậu vị ngọt ngào lưu luyến."
+  },
+  {
+    "id": "cpdg-2",
+    "name": "Cà phê rang xay Culi Highlands Coffee gói 250g",
+    "category": "Cà Phê Đóng Gói",
+    "categoryName": "Cà Phê Đóng Gói",
+    "price": 135000,
+    "oldPrice": null,
+    "badge": null,
+    "badgeType": null,
+    "image": "/assets/images/pkg_coffee.jpg",
+    "description": "Cà phê Culi đậm đà, vị đắng gắt nồng nàn cùng hàm lượng caffeine cao cho ngày làm việc tỉnh táo."
+  },
+  {
+    "id": "cpdg-3",
+    "name": "Cà phê rang xay Full City Roast Highlands Coffee gói 1kg",
+    "category": "Cà Phê Đóng Gói",
+    "categoryName": "Cà Phê Đóng Gói",
+    "price": 665000,
+    "oldPrice": null,
+    "badge": null,
+    "badgeType": null,
+    "image": "/assets/images/pkg_coffee.jpg",
+    "description": "Cà phê rang mộc Full City Roast hương vị mộc mạc nguyên bản thích hợp pha Espresso và Phin."
+  },
+  {
+    "id": "cpdg-4",
+    "name": "Cà phê rang xay Truyền Thống Highlands Coffee gói 1kg",
+    "category": "Cà Phê Đóng Gói",
+    "categoryName": "Cà Phê Đóng Gói",
+    "price": 105000,
+    "oldPrice": null,
+    "badge": null,
+    "badgeType": null,
+    "image": "/assets/images/pkg_coffee.jpg",
+    "description": "Cà phê Truyền Thống Highlands Coffee kết hợp giữa hạt Robusta và Arabica đậm đà chuẩn gu Việt."
+  },
+  {
+    "id": "cpdg-5",
+    "name": "CÀ PHÊ HÒA TAN 3 TRONG 1 HIGHLANDS COFFEE",
+    "category": "Cà Phê Đóng Gói",
+    "categoryName": "Cà Phê Đóng Gói",
+    "price": 75000,
+    "oldPrice": 163000,
+    "discountPercent": 54,
+    "badge": "-54%",
+    "badgeType": "discount",
+    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuCrMiuVSbmMOEJjypn6rDYJQdkfBo3Fyf05Ct6zuyuyJnKio688zEgb83G8ZxcY_K2YjlUKgLSuDQ6N3aTrkXYQ7fJlO43XVJFO6DLm-r0Xj2br1izetk8Jkrke2s_BJyUncB40HP_cTCY0D1hPmioNv7ojR-OWnkPGbSa-c5P1lpG6BG1rJ1ekHJwHThe7iH367OFik-7_aFnhXGbmYJw12u6Xsc2dNGiOOxBQuICW9CzG9BJteyRsHtucQZDBflZGHLmv7SI0L9b7YGo",
+    "description": "Cà phê hòa tan 3in1 vị đậm đà thơm lừng ngon như cà phê pha phin tiện lợi mọi lúc mọi nơi."
+  },
+  {
+    "id": "cpdg-6",
+    "name": "CÀ PHÊ HÒA TAN 3 TRONG 1 HIGHLANDS COFFEE BỊCH LỚN",
+    "category": "Cà Phê Đóng Gói",
+    "categoryName": "Cà Phê Đóng Gói",
+    "price": 179000,
+    "oldPrice": 199000,
+    "discountPercent": 10,
+    "badge": "-10%",
+    "badgeType": "discount",
+    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuCrMiuVSbmMOEJjypn6rDYJQdkfBo3Fyf05Ct6zuyuyJnKio688zEgb83G8ZxcY_K2YjlUKgLSuDQ6N3aTrkXYQ7fJlO43XVJFO6DLm-r0Xj2br1izetk8Jkrke2s_BJyUncB40HP_cTCY0D1hPmioNv7ojR-OWnkPGbSa-c5P1lpG6BG1rJ1ekHJwHThe7iH367OFik-7_aFnhXGbmYJw12u6Xsc2dNGiOOxBQuICW9CzG9BJteyRsHtucQZDBflZGHLmv7SI0L9b7YGo",
+    "description": "Cà phê hòa tan 3in1 bịch lớn 50 gói tiết kiệm hơn, thích hợp dùng cho gia đình và văn phòng."
+  },
+  {
+    "id": "cpdg-7",
+    "name": "Cà Phê Sữa Lon 235ml",
+    "category": "Cà Phê Đóng Gói",
+    "categoryName": "Cà Phê Đóng Gói",
+    "price": 30000,
+    "oldPrice": null,
+    "badge": null,
+    "badgeType": null,
+    "image": "/assets/images/pkg_coffee.jpg",
+    "description": "Cà phê sữa đóng lon Highlands Coffee mát lạnh đậm đà sẵn sàng thưởng thức mọi lúc mọi nơi."
+  },
+  {
+    "id": "cpdg-8",
+    "name": "Cà phê sữa đóng lon Highlands Coffee - lốc 6 lon",
+    "category": "Cà Phê Đóng Gói",
+    "categoryName": "Cà Phê Đóng Gói",
+    "price": 95000,
+    "oldPrice": null,
+    "badge": null,
+    "badgeType": null,
+    "image": "/assets/images/pkg_coffee.jpg",
+    "description": "Lốc 6 lon cà phê sữa đóng lon 235ml vô cùng tiện lợi và tiết kiệm."
+  }
+]

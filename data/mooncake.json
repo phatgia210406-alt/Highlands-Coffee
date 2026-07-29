@@ -1,0 +1,46 @@
+[
+  {
+    "id": "mc-1",
+    "name": "Bánh Trung Thu Cà Phê Lava",
+    "category": "BÁNH TRUNG THU",
+    "categoryName": "Bánh Trung Thu",
+    "price": 99000,
+    "badge": null,
+    "badgeType": null,
+    "image": "/assets/images/banh-trung-thu-ca-phe-lava.webp",
+    "description": "Bánh Trung Thu nhân cà phê chảy Lava độc đáo"
+  },
+  {
+    "id": "mc-2",
+    "name": "Bánh Trung Thu Matcha",
+    "category": "BÁNH TRUNG THU",
+    "categoryName": "Bánh Trung Thu",
+    "price": 99000,
+    "badge": null,
+    "badgeType": null,
+    "image": "/assets/images/banh-trung-thu-matcha.webp",
+    "description": "Bánh Trung Thu nhân Matcha thanh mát"
+  },
+  {
+    "id": "mc-3",
+    "name": "Bánh Trung Thu Đậu Xanh",
+    "category": "BÁNH TRUNG THU",
+    "categoryName": "Bánh Trung Thu",
+    "price": 99000,
+    "badge": null,
+    "badgeType": null,
+    "image": "/assets/images/banh-trung-thu-dau-xanh.webp",
+    "description": "Bánh Trung Thu Đậu Xanh truyền thống bùi béo"
+  },
+  {
+    "id": "mc-4",
+    "name": "Bánh Trung Thu Thập Cẩm Bát Bửu",
+    "category": "BÁNH TRUNG THU",
+    "categoryName": "Bánh Trung Thu",
+    "price": 119000,
+    "badge": null,
+    "badgeType": null,
+    "image": "/assets/images/banh-trung-thu-thap-cam-bat-buu.webp",
+    "description": "Bánh Trung Thu Thập Cẩm đậm đà vị truyền thống"
+  }
+]

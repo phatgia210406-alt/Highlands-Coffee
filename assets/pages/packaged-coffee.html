@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cà Phê Đóng Gói | Highlands Coffee</title>
+  
+  <!-- Google Fonts & Material Symbols -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+  
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body class="is-inner-page">
+
+  <!-- Header & Navigation -->
+  <header class="main-header">
+    <div class="utility-bar">
+      <div class="container d-flex align-items-center justify-content-between">
+        <div class="d-flex align-items-center gap-4">
+          <a href="/index.html" class="d-flex align-items-center text-decoration-none">
+            <img src="/assets/images/icon_coffe.png" alt="Highlands Coffee" style="height: 44px;">
+          </a>
+          <div class="search-box d-none d-md-flex">
+            <span class="material-symbols-outlined text-secondary fs-5">search</span>
+            <input type="text" id="searchInput" placeholder="Xin chào, bạn cần gì hôm nay?">
+          </div>
+        </div>
+
+        <div class="d-flex align-items-center gap-3 gap-md-4">
+          <div class="d-none d-sm-flex align-items-center gap-2">
+            <div class="d-flex align-items-center justify-content-center rounded-circle border border-danger text-danger" style="width: 32px; height: 32px; border-width: 1.8px !important; flex-shrink: 0;">
+              <span class="material-symbols-outlined" style="font-size: 18px; color: #b81c24;">call</span>
+            </div>
+            <div class="lh-sm" style="font-size: 13px; color: #111;">
+              <div style="font-weight: 400; color: #111;">Giao tận nơi</div>
+              <div style="font-weight: 700; font-size: 14px; color: #000;">19001755</div>
+            </div>
+          </div>
+
+          <a href="/login.html" class="d-flex align-items-center gap-2 text-dark text-decoration-none">
+            <span class="material-symbols-outlined" style="font-size: 34px; color: #b81c24;">account_circle</span>
+            <div class="lh-sm d-none d-md-block" style="font-size: 13px; color: #111;">
+              <div style="font-weight: 400; color: #111;">Tài khoản</div>
+              <div style="font-size: 12px; font-weight: 400; color: #111;">Đăng nhập</div>
+            </div>
+          </a>
+
+          <button id="openCartBtn" class="d-flex align-items-center gap-2 px-3 py-1" style="background: #ffffff; border: 1.2px solid #b81c24; border-radius: 8px; cursor: pointer;">
+            <span class="material-symbols-outlined" style="color: #f0a500; font-size: 21px;">shopping_cart</span>
+            <span class="d-none d-sm-inline" style="font-size: 13px; font-weight: 400; color: #111;">Giỏ hàng</span>
+            <span id="cartBadgeCount" style="background-color: #ebdcd0; color: #8b1e22; border-radius: 4px; padding: 1px 7px; font-weight: 600; font-size: 13px; min-width: 20px; text-align: center; display: inline-flex; align-items: center; justify-content: center;">0</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Top Navbar -->
+    <nav class="top-navbar">
+      <div class="container"><div class="row align-items-center g-0"><div class="col-12 col-lg-3">
+        <div class="category-menu-wrapper position-relative">
+          <a href="/index.html" class="category-header-white-box text-decoration-none">
+            <div class="d-flex align-items-center gap-2">
+              <span class="material-symbols-outlined">menu</span>
+              <span>Danh mục sản phẩm</span>
+            </div>
+            <span class="material-symbols-outlined dropdown-arrow">expand_more</span>
+          </a>
+
+          <!-- Category Hover Dropdown Menu Popup (For Inner Pages) -->
+          <div class="category-dropdown-menu" id="categoryDropdownMenu">
+            <a href="/pages/coffee.html" class="dropdown-cat-item">
+              <span class="material-symbols-outlined cat-icon cat-icon-coffee">coffee</span>
+              <span>Cà Phê</span>
+            </a>
+            <a href="/pages/tea.html" class="dropdown-cat-item">
+              <span class="material-symbols-outlined cat-icon cat-icon-tea">emoji_food_beverage</span>
+              <span>Trà</span>
+            </a>
+            <a href="/pages/freeze.html" class="dropdown-cat-item">
+              <span class="material-symbols-outlined cat-icon cat-icon-freeze">icecream</span>
+              <span>Freeze</span>
+            </a>
+            <a href="/pages/phindi.html" class="dropdown-cat-item">
+              <span class="material-symbols-outlined cat-icon cat-icon-phindi">coffee_maker</span>
+              <span>PhinĐI</span>
+            </a>
+            <a href="/pages/banh-mi-que.html" class="dropdown-cat-item">
+              <span class="material-symbols-outlined cat-icon cat-icon-banhmi">bakery_dining</span>
+              <span>Bánh Mì Que</span>
+            </a>
+            <a href="/pages/cake.html" class="dropdown-cat-item">
+              <span class="material-symbols-outlined cat-icon cat-icon-cake">cake</span>
+              <span>Bánh Ngọt</span>
+            </a>
+            <a href="/pages/drinks.html" class="dropdown-cat-item">
+              <span class="material-symbols-outlined cat-icon cat-icon-drinks">local_bar</span>
+              <span>Thức Uống Khác</span>
+            </a>
+            <a href="/pages/matcha.html" class="dropdown-cat-item">
+              <span class="material-symbols-outlined cat-icon cat-icon-matcha">eco</span>
+              <span>MatchaĐI</span>
+            </a>
+            </div>
+        </div>
+
+        </div><div class="col-12 col-lg-9 d-flex align-items-center gap-4 justify-content-end py-2 ps-3">
+          <a href="/pages/chinh-sach-doi-tra.html" class="top-navbar-link"><span class="material-symbols-outlined fs-5">redeem</span><span>Chính sách đổi trả</span></a>
+          <a href="#lien-he" class="top-navbar-link">
+            <span class="material-symbols-outlined fs-5">location_on</span>
+            <span>Liên hệ</span>
+          </a>
+          <a href="/pages/bankrista.html" class="top-navbar-link">
+            <span class="material-symbols-outlined fs-5">campaign</span>
+            <span>Bankrista Thịnh Vượng</span>
+          </a>
+        </div></div></div></nav>
+  </header>
+
+  <!-- Main Category Content -->
+  <main class="container my-3">
+    <!-- Breadcrumb -->
+    <nav class="category-breadcrumb">
+      <a href="/index.html">Trang chủ</a> / <span class="fw-bold text-dark">Cà Phê Đóng Gói</span>
+    </nav>
+
+    <!-- Category Header -->
+    <h1 class="category-page-title">Cà Phê Đóng Gói</h1>
+
+    <!-- 4-Column Product Grid -->
+    <div id="categoryProductGrid" class="product-grid-4col" data-json="/data/packaged-coffee.json">
+      <!-- Products will be preloaded / populated dynamically -->
+    </div>
+  </main>
+
+  <!-- Cart Drawer -->
+  <div id="cartBackdrop" class="cart-backdrop"></div>
+  <aside id="cartDrawer" class="cart-drawer">
+    <div class="cart-drawer-header">
+      <h5 class="fw-bold m-0 d-flex align-items-center gap-2">
+        <span class="material-symbols-outlined text-danger">shopping_bag</span>
+        Giỏ Hàng Của Bạn
+      </h5>
+      <button id="closeCartBtn" class="btn-close"></button>
+    </div>
+    <div id="cartDrawerList" class="cart-drawer-body">
+      <!-- Items dynamically populated -->
+    </div>
+    <div class="cart-drawer-footer">
+      <div class="d-flex align-items-center justify-content-between mb-3">
+        <span class="fw-bold text-secondary">Tổng cộng:</span>
+        <span id="cartDrawerTotal" class="fw-bold text-danger fs-5">0đ</span>
+      </div>
+      <a href="/pages/checkout.html" class="btn btn-highlands w-100 py-2 fw-bold text-uppercase">Thanh Toán Ngay</a>
+    </div>
+  </aside>
+
+  <!-- Footer -->
+  <footer id="lien-he" class="main-footer">
+  <div class="container">
+    <div class="row g-4">
+      <!-- Col 1 -->
+      <div class="col-12 col-md-3">
+        <div class="footer-brand-title">HIGHLANDS COFFEE</div>
+        <p class="text-secondary small">Highlands Coffee® Order tự hào là nhà phân phối hợp lệ cho tất cả các sản phẩm mang thương hiệu Highlands Coffee®. Chúng tôi kết nối cộng đồng qua hương vị cà phê đậm đà bản sắc Việt.</p>
+      </div>
+
+      <!-- Col 2 -->
+      <div class="col-12 col-md-3">
+        <h6>LIÊN HỆ</h6>
+        <p class="mb-1 text-secondary">📍 125–127 Nguyễn Cơ Thạch, Quận 2, TP. Hồ Chí Minh</p>
+        <p class="mb-1 text-secondary">📞 1900 1755</p>
+        <p class="mb-0 text-secondary">🌐 highlandscoffee.com.vn</p>
+      </div>
+
+      <!-- Col 3 -->
+      <div class="col-12 col-md-3">
+        <h6>Hỗ trợ</h6>
+        <a href="/login.html" class="footer-link">Đăng nhập</a>
+        <a href="/register.html" class="footer-link">Đăng ký</a>
+        <a href="/pages/cart.html" class="footer-link">Giỏ hàng</a>
+      </div>
+
+      <!-- Col 4 -->
+      <div class="col-12 col-md-3">
+        <h6>ĐĂNG KÝ NHẬN TIN</h6>
+        <p class="text-secondary small mb-2">Nhận những ưu đãi mới nhất từ chúng tôi.</p>
+        <div class="newsletter-input-group">
+          <input type="email" placeholder="Email của bạn">
+          <button type="button">Gửi</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="border-top border-secondary mt-4 pt-3 text-center text-secondary small">
+      © 2026 Highlands Coffee. Tất cả quyền được bảo lưu.
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/assets/js/menu.js"></script>
+  <script src="/assets/js/app.js"></script>
+  <script src="/assets/js/search.js"></script>
+  <script src="/assets/js/product.js"></script>
+</body>
+</html>

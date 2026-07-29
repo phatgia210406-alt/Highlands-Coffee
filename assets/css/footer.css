@@ -1,0 +1,123 @@
+.main-footer {
+  background-color: #1a0909;
+  color: #e2e8f0;
+  padding: 48px 0 24px;
+  margin-top: 48px;
+  font-size: 13px;
+}
+
+.main-footer h5, .main-footer h6 {
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.footer-brand-title {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 900;
+  letter-spacing: 0.5px;
+  margin-bottom: 12px;
+}
+
+.footer-link {
+  color: #cbd5e1;
+  font-size: 12px;
+  display: block;
+  margin-bottom: 8px;
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+.footer-link:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.newsletter-input-group {
+  display: flex;
+  background-color: #ffffff;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-top: 8px;
+}
+
+.newsletter-input-group input {
+  border: none;
+  padding: 8px 12px;
+  font-size: 12px;
+  outline: none;
+  flex: 1;
+  color: #333333;
+}
+
+.newsletter-input-group button {
+  background-color: #90091c;
+  color: #ffffff;
+  border: none;
+  font-weight: 700;
+  padding: 8px 16px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.newsletter-input-group button:hover {
+  background-color: #780717;
+}
+
+/* Floating Action Buttons */
+.floating-widgets {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  z-index: 9999;
+}
+
+.float-btn {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  border: none;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.2s;
+  text-decoration: none;
+}
+
+.float-btn:hover {
+  transform: scale(1.1);
+  color: #ffffff;
+}
+
+.float-btn-top {
+  background-color: #334155;
+}
+
+.float-btn-phone {
+  background-color: #e11d48;
+  animation: pulse-phone 2s infinite;
+}
+
+@keyframes pulse-phone {
+  0% {
+    box-shadow: 0 0 0 0 rgba(225, 29, 72, 0.6);
+  }
+  70% {
+    box-shadow: 0 0 0 12px rgba(225, 29, 72, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(225, 29, 72, 0);
+  }
+}
+

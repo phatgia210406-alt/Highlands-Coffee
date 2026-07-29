@@ -1,0 +1,1146 @@
+[
+  {
+    "id": "cp-1",
+    "name": "Phin Sữa Đá",
+    "category": "Cà Phê",
+    "categoryName": "Cà Phê",
+    "price": 29000,
+    "badge": "BÁN CHẠY!",
+    "badgeType": "banner",
+    "image": "/assets/images/phinsuada.webp",
+    "description": "Hương vị trứ danh pha từ hạt cà phê Robusta & Arabica chọn lọc.",
+    "images": [
+      "/assets/images/phinsuada.webp",
+      "/assets/images/phin-sua-da1.webp"
+    ]
+  },
+  {
+    "id": "cp-2",
+    "name": "Phin Đen Đá",
+    "category": "Cà Phê",
+    "categoryName": "Cà Phê",
+    "price": 29000,
+    "badge": "BÁN CHẠY!",
+    "badgeType": "banner",
+    "image": "/assets/images/phin-den-da.webp",
+    "description": "Dành cho tín đồ yêu thích vị cà phê nguyên chất sảng khoái.",
+    "images": [
+      "/assets/images/phin-den-da.webp",
+      "/assets/images/phin-den-da1.webp"
+    ]
+  },
+  {
+    "id": "cp-3",
+    "name": "Bạc Xỉu Đá",
+    "category": "Cà Phê",
+    "categoryName": "Cà Phê",
+    "price": 29000,
+    "badge": "THỬ NGAY!",
+    "badgeType": "banner",
+    "image": "/assets/images/bac-xiu-da.webp",
+    "description": "Nhẹ nhàng thanh dịu cho buổi sáng tỉnh táo nhẹ nhàng.",
+    "images": [
+      "/assets/images/bac-xiu-da.webp",
+      "/assets/images/bac-xiu-da1.webp"
+    ]
+  },
+  {
+    "id": "cp-4",
+    "name": "Latte đá",
+    "category": "Cà Phê",
+    "categoryName": "Cà Phê",
+    "price": 55000,
+    "badge": "GIÁ MỚI THỬ NGAY!",
+    "badgeType": "circle",
+    "image": "/assets/images/latte-da.webp",
+    "description": "Hạt Espresso đậm vị kết hợp sữa tươi mềm mại mát lạnh.",
+    "images": [
+      "/assets/images/latte-da.webp"
+    ]
+  },
+  {
+    "id": "cp-5",
+    "name": "Latte Nóng",
+    "category": "Cà Phê",
+    "categoryName": "Cà Phê",
+    "price": 55000,
+    "badge": "GIÁ MỚI THỬ NGAY!",
+    "badgeType": "circle",
+    "image": "/assets/images/latte-nong.webp",
+    "description": "Espresso thơm lừng hòa cùng bọt sữa mịn màng nóng hổi.",
+    "images": [
+      "/assets/images/latte-nong.webp",
+      "/assets/images/latte-nong1.webp"
+    ]
+  },
+  {
+    "id": "cp-6",
+    "name": "Cappuccino Đá",
+    "category": "Cà Phê",
+    "categoryName": "Cà Phê",
+    "price": 55000,
+    "badge": "GIÁ MỚI THỬ NGAY!",
+    "badgeType": "circle",
+    "image": "/assets/images/Cappuccino-da.webp",
+    "description": "Vị cà phê Ý thơm đậm kết hợp cùng lớp bọt béo ngậy đá sảng khoái.",
+    "images": [
+      "/assets/images/Cappuccino-da.webp",
+      "/assets/images/Cappuccino-da1.webp"
+    ]
+  },
+  {
+    "id": "cp-7",
+    "name": "Cappuccino Nóng",
+    "category": "Cà Phê",
+    "categoryName": "Cà Phê",
+    "price": 55000,
+    "badge": "GIÁ MỚI THỬ NGAY!",
+    "badgeType": "circle",
+    "image": "/assets/images/cappuccino-nong.webp",
+    "description": "Thơm béo ấm áp với lớp bọt sữa vẽ hình tỉ mỉ.",
+    "images": [
+      "/assets/images/cappuccino-nong.webp",
+      "/assets/images/cappuccino-nong1.webp"
+    ]
+  },
+  {
+    "id": "cp-8",
+    "name": "Americano Đá",
+    "category": "Cà Phê",
+    "categoryName": "Cà Phê",
+    "price": 45000,
+    "badge": null,
+    "badgeType": null,
+    "image": "/assets/images/Americano-da.webp",
+    "description": "Espresso pha loãng cùng đá lạnh, giữ trọn hương thanh nhẹ.",
+    "images": [
+      "/assets/images/Americano-da.webp",
+      "/assets/images/Americano-da1.webp"
+    ]
+  },
+  {
+    "id": "cp-9",
+    "name": "Americano Nóng",
+    "category": "Cà Phê",
+    "categoryName": "Cà Phê",
+    "price": 45000,
+    "badge": null,
+    "badgeType": null,
+    "image": "/assets/images/Americano-nong.webp",
+    "description": "Hương vị Espresso nguyên bản ấm nóng dễ chịu.",
+    "images": [
+      "/assets/images/Americano-nong.webp",
+      "/assets/images/Americano-nong1.webp"
+    ]
+  },
+  {
+    "id": "cp-10",
+    "name": "Caramel Macchiato",
+    "category": "Cà Phê",
+    "categoryName": "Cà Phê",
+    "price": 69000,
+    "badge": "THỬ NGAY!",
+    "badgeType": "banner",
+    "image": "/assets/images/caramel-macchiato.webp",
+    "description": "Sữa tươi, bọt sữa hòa quyện Espresso và xốt Caramel ngọt ngào.",
+    "images": [
+      "/assets/images/caramel-macchiato.webp",
+      "/assets/images/caramel-macchiatto1.webp"
+    ]
+  },
+  {
+    "id": "cp-11",
+    "name": "Caramel Macchiato Nóng",
+    "category": "Cà Phê",
+    "categoryName": "Cà Phê",
+    "price": 69000,
+    "badge": null,
+    "badgeType": null,
+    "image": "/assets/images/caramel-macchiato-nong.webp",
+    "description": "Xốt caramel ngọt dịu nồng nàn thơm béo.",
+    "images": [
+      "/assets/images/caramel-macchiato-nong.webp",
+      "/assets/images/caramel-macchiato-nong1.webp"
+    ]
+  },
+  {
+    "id": "cp-12",
+    "name": "Phin Sữa Nóng",
+    "category": "Cà Phê",
+    "categoryName": "Cà Phê",
+    "price": 29000,
+    "badge": null,
+    "badgeType": null,
+    "image": "/assets/images/Phin-xiu-nong.webp",
+    "description": "Cà phê phin truyền thống đậm đà kết hợp sữa đặc ngọt béo ấm nóng.",
+    "images": [
+      "/assets/images/Phin-xiu-nong.webp",
+      "/assets/images/Phin-xiu-nong1.webp"
+    ]
+  },
+  {
+    "id": "cp-13",
+    "name": "Phin Đen Nóng",
+    "category": "Cà Phê",
+    "categoryName": "Cà Phê",
+    "price": 29000,
+    "badge": null,
+    "badgeType": null,
+    "image": "/assets/images/phin-den-nong.webp",
+    "description": "Cà phê phin nguyên chất đậm đà chuẩn gu Việt.",
+    "images": [
+      "/assets/images/phin-den-nong.webp",
+      "/assets/images/phin-den-nong1.jpg"
+    ]
+  },
+  {
+    "id": "cp-14",
+    "name": "Espresso Nóng",
+    "category": "Cà Phê",
+    "categoryName": "Cà Phê",
+    "price": 45000,
+    "badge": null,
+    "badgeType": null,
+    "image": "/assets/images/espresso-nong.webp",
+    "description": "Trích xuất đậm đặc nguyên bản từ những hạt cà phê cao cấp.",
+    "images": [
+      "/assets/images/espresso-nong.webp",
+      "/assets/images/espresso-nong1.jpg"
+    ]
+  },
+  {
+    "id": "cp-15",
+    "name": "Bạc Xỉu Nóng",
+    "category": "Cà Phê",
+    "categoryName": "Cà Phê",
+    "price": 29000,
+    "badge": null,
+    "badgeType": null,
+    "image": "/assets/images/bac-xiu-nong.webp",
+    "description": "Sữa nóng ngọt ngào thơm thoảng hương vị cà phê phin.",
+    "images": [
+      "/assets/images/bac-xiu-nong.webp"
+    ]
+  },
+  {
+    "id": "tra-1",
+    "name": "Trà Sen Vàng (Củ Năng)",
+    "category": "Trà",
+    "categoryName": "Trà",
+    "price": 45000,
+    "badge": "BÁN CHẠY!",
+    "badgeType": "banner",
+    "image": "/assets/images/Tra_sen_vang(cn).webp",
+    "description": "Sen Bùi, Kem Mịn - Hương trà ô long kết hợp cùng củ năng giòn ngọt và lớp kem béo ngậy.",
+    "images": [
+      "/assets/images/Tra_sen_vang(cn).webp",
+      "/assets/images/tra_sen_vang(cn)1.webp"
+    ]
+  },
+  {
+    "id": "tra-2",
+    "name": "Trà Sen Vàng (Sen)",
+    "category": "Trà",
+    "categoryName": "Trà",
+    "price": 45000,
+    "badge": "BÁN CHẠY!",
+    "badgeType": "banner",
+    "image": "/assets/images/tra-sen-vang-sen.webp",
+    "description": "Sen Bùi, Kem Mịn - Hương trà ô long thanh mát kết hợp cùng hạt sen bùi dẻo và lớp kem béo.",
+    "images": [
+      "/assets/images/tra-sen-vang-sen.webp",
+      "/assets/images/tra-sen-vang-sen1.webp"
+    ]
+  },
+  {
+    "id": "tra-3",
+    "name": "Trà Thạch Đào",
+    "category": "Trà",
+    "categoryName": "Trà",
+    "price": 45000,
+    "badge": "THỬ NGAY!",
+    "badgeType": "banner",
+    "image": "/assets/images/tra-thach-dao.webp",
+    "description": "Trà đào thơm ngon ngọt dịu cùng miếng thạch đào giòn sần sật.",
+    "images": [
+      "/assets/images/tra-thach-dao.webp",
+      "/assets/images/tra-thach-dao1.webp"
+    ]
+  },
+  {
+    "id": "tra-4",
+    "name": "Trà Thanh Đào",
+    "category": "Trà",
+    "categoryName": "Trà",
+    "price": 45000,
+    "badge": null,
+    "badgeType": null,
+    "image": "/assets/images/tra-thanh-dao.webp",
+    "description": "Vị trà thanh nhẹ kết hợp miếng đào tươi mọng nước mát lạnh.",
+    "images": [
+      "/assets/images/tra-thanh-dao.webp",
+      "/assets/images/tra-thanh-dao1.webp"
+    ]
+  },
+  {
+    "id": "tra-5",
+    "name": "Trà Thạch Vải",
+    "category": "Trà",
+    "categoryName": "Trà",
+    "price": 45000,
+    "badge": null,
+    "badgeType": null,
+    "image": "/assets/images/tra-thach-vai.webp",
+    "description": "Trà ngát hương vải dịu ngọt kèm thạch vải dẻo giòn xua tan cái nóng.",
+    "images": [
+      "/assets/images/tra-thach-vai.webp",
+      "/assets/images/tra-thach-vai1.webp"
+    ]
+  },
+  {
+    "id": "tra-6",
+    "name": "Trà Xanh Đậu Đỏ",
+    "category": "Trà",
+    "categoryName": "Trà",
+    "price": 45000,
+    "badge": null,
+    "badgeType": null,
+    "image": "/assets/images/tra-xanh-dau-do.webp",
+    "description": "Trà xanh đắng nhẹ thanh mát kết hợp cùng đậu đỏ bùi ngọt.",
+    "images": [
+      "/assets/images/tra-xanh-dau-do.webp",
+      "/assets/images/tra-xanh-dau-do1.webp"
+    ]
+  },
+  {
+    "id": "tra-7",
+    "name": "Trà Sen Vàng (Sen) Nóng",
+    "category": "Trà",
+    "categoryName": "Trà",
+    "price": 45000,
+    "badge": null,
+    "badgeType": null,
+    "image": "/assets/images/tra-sen-vang-sen-nong.webp",
+    "description": "Trà ô long sen vàng ấm nóng nồng nàn vị hạt sen bùi dịu.",
+    "images": [
+      "/assets/images/tra-sen-vang-sen-nong.webp",
+      "/assets/images/tra-sen-vang-sen-nong1.webp"
+    ]
+  },
+  {
+    "id": "tra-8",
+    "name": "Trà Thanh Đào Nóng",
+    "category": "Trà",
+    "categoryName": "Trà",
+    "price": 45000,
+    "badge": null,
+    "badgeType": null,
+    "image": "/assets/images/tra-thanh-dao-nong.webp",
+    "description": "Hương trà đào ấm áp dễ chịu dịu nhẹ cho ngày thư thái.",
+    "images": [
+      "/assets/images/tra-thanh-dao-nong.webp",
+      "/assets/images/tra-thanh-dao-nong1.webp"
+    ]
+  },
+  {
+    "id": "tra-9",
+    "name": "Trà Thạch Vải Nóng",
+    "category": "Trà",
+    "categoryName": "Trà",
+    "price": 45000,
+    "badge": null,
+    "badgeType": null,
+    "image": "/assets/images/tra-thach-vai-nong.webp",
+    "description": "Hương vải thơm mát hòa quyện trong làn hơi nước ấm áp.",
+    "images": [
+      "/assets/images/tra-thach-vai-nong.webp",
+      "/assets/images/tra-thach-vai-nong1.webp"
+    ]
+  },
+  {
+    "id": "tra-10",
+    "name": "Trà Xanh Đậu Đỏ Nóng",
+    "category": "Trà",
+    "categoryName": "Trà",
+    "price": 45000,
+    "badge": null,
+    "badgeType": null,
+    "image": "/assets/images/tra-xanh-dau-do-nong.webp",
+    "description": "Trà xanh thơm đượm vị hòa cùng đậu đỏ dẻo bùi ấm lòng.",
+    "images": [
+      "/assets/images/tra-xanh-dau-do-nong.webp",
+      "/assets/images/tra-xanh-dau-do-nong1.webp"
+    ]
+  },
+  {
+    "id": "fr-1",
+    "name": "Freeze Trà Xanh",
+    "category": "Freeze",
+    "categoryName": "Freeze",
+    "price": 55000,
+    "badge": "BÁN CHẠY!",
+    "badgeType": "banner",
+    "image": "/assets/images/freeze-tra-xanh.webp",
+    "description": "Thức uống đá xay đậm vị Matcha Nhật Bản kết hợp thạch trà xanh dẻo giòn và lớp kem béo ngậy.",
+    "images": [
+      "/assets/images/freeze-tra-xanh.webp",
+      "/assets/images/freeze-tra-xanh1.webp"
+    ]
+  },
+  {
+    "id": "fr-2",
+    "name": "Freeze Sô-Cô-La",
+    "category": "Freeze",
+    "categoryName": "Freeze",
+    "price": 55000,
+    "badge": "BÁN CHẠY!",
+    "badgeType": "banner",
+    "image": "/assets/images/freeze-chocoate.webp",
+    "description": "Đá xay Sô-cô-la đậm đà ngọt đắng hoàn hảo hòa quyện lớp kem tươi mịn màng.",
+    "images": [
+      "/assets/images/freeze-chocoate.webp",
+      "/assets/images/freeze-chocolate1.webp"
+    ]
+  },
+  {
+    "id": "fr-3",
+    "name": "Cookies & Cream",
+    "category": "Freeze",
+    "categoryName": "Freeze",
+    "price": 55000,
+    "badge": null,
+    "badgeType": null,
+    "image": "/assets/images/freeze-cookies.webp",
+    "description": "Bánh quy sô-cô-la xay cùng đá tuyết thanh mát topped lớp kem tươi giòn rụm.",
+    "images": [
+      "/assets/images/freeze-cookies.webp",
+      "/assets/images/freeze-cookies1.jpg"
+    ]
+  },
+  {
+    "id": "pd-1",
+    "name": "Phindi Hạnh Nhân",
+    "category": "PhinDi",
+    "categoryName": "PhinDi",
+    "price": 45000,
+    "badge": "BÁN CHẠY!",
+    "badgeType": "banner",
+    "image": "/assets/images/phindi-hanh-nhan.webp",
+    "description": "Cà phê Phin thế hệ mới kết hợp cùng hạnh nhân thơm bùi, mang lại trải nghiệm mới lạ khó cưỡng.",
+    "images": [
+      "/assets/images/phindi-hanh-nhan.webp",
+      "/assets/images/phindi-hanh-nhan1.webp"
+    ]
+  },
+  {
+    "id": "pd-2",
+    "name": "PhinĐi Kem Sữa",
+    "category": "PhinDi",
+    "categoryName": "PhinDi",
+    "price": 45000,
+    "badge": "THỬ NGAY!",
+    "badgeType": "banner",
+    "image": "/assets/images/phindi-kem-sua.webp",
+    "description": "Một trải nghiệm cà phê Phin êm dịu, ngọt ngào cùng lớp kem sữa sánh mịn béo ngậy.",
+    "images": [
+      "/assets/images/phindi-kem-sua.webp",
+      "/assets/images/phindi-kem-sua1.webp"
+    ]
+  },
+  {
+    "id": "pd-3",
+    "name": "PhinĐi Choco",
+    "category": "PhinDi",
+    "categoryName": "PhinDi",
+    "price": 45000,
+    "badge": "THỬ NGAY!",
+    "badgeType": "banner",
+    "image": "/assets/images/phindi-choco.webp",
+    "description": "Sự kết hợp hoàn hảo giữa vị đậm đà của cà phê Phin truyền thống và vị đắng nhẹ ngọt ngào của sô-cô-la.",
+    "images": [
+      "/assets/images/phindi-choco.webp",
+      "/assets/images/phindi-choco-1.webp"
+    ]
+  },
+  {
+    "id": "bm-1",
+    "name": "Bánh Mì Que Gà Phô Mai",
+    "category": "CAKE - BEST SELLER",
+    "categoryName": "CAKE - BEST SELLER",
+    "price": 19000,
+    "badge": null,
+    "badgeType": null,
+    "image": "/assets/images/bmq-ga-pho-mai.webp",
+    "description": "Bánh mì que giòn rụm kẹp nhân thịt gà xé đậm đà và phô mai tan chảy béo ngậy.",
+    "images": [
+      "/assets/images/bmq-ga-pho-mai.webp"
+    ]
+  },
+  {
+    "id": "bm-2",
+    "name": "Bánh Mì Que Pate",
+    "category": "CAKE - BEST SELLER",
+    "categoryName": "CAKE - BEST SELLER",
+    "price": 19000,
+    "badge": null,
+    "badgeType": null,
+    "image": "/assets/images/banhmique.webp",
+    "description": "Bánh mì que truyền thống giòn tan thơm nức vị pate gan béo ngậy đặc trưng.",
+    "images": [
+      "/assets/images/banhmique.webp"
+    ]
+  },
+  {
+    "id": "bn-3",
+    "name": "Bánh Phô Mai Trà Xanh",
+    "category": "CAKE - BEST SELLER",
+    "categoryName": "CAKE - BEST SELLER",
+    "price": 35000,
+    "badge": null,
+    "badgeType": null,
+    "image": "/assets/images/pho-mai-tra-xanh.webp",
+    "description": "Sự kết hợp giữa vị chát nhẹ của Matcha và độ béo ngậy dẻo mịn của phô mai.",
+    "images": [
+      "/assets/images/pho-mai-tra-xanh.webp"
+    ]
+  },
+  {
+    "id": "bn-4",
+    "name": "Bánh Croissant",
+    "category": "CAKE - BEST SELLER",
+    "categoryName": "CAKE - BEST SELLER",
+    "price": 29000,
+    "badge": "BÁN CHẠY!",
+    "badgeType": "banner",
+    "image": "/assets/images/croisaint.webp",
+    "description": "Bánh sừng bò ngàn lớp giòn xốp thơm lừng vị bơ Pháp cao cấp.",
+    "images": [
+      "/assets/images/croisaint.webp"
+    ]
+  },
+  {
+    "id": "bn-6",
+    "name": "Bánh Chuối",
+    "category": "CAKE - BEST SELLER",
+    "categoryName": "CAKE - BEST SELLER",
+    "price": 29000,
+    "badge": "BÁN CHẠY!",
+    "badgeType": "banner",
+    "image": "/assets/images/banh-chuoi.webp",
+    "description": "Bánh chuối nướng thơm lừng chuẩn vị truyền thống ngọt dịu nồng nàn.",
+    "images": [
+      "/assets/images/banh-chuoi.webp"
+    ]
+  },
+  {
+    "id": "bn-1",
+    "name": "Bánh Kem Tiramisu",
+    "category": "CAKE - BEST SELLER",
+    "categoryName": "CAKE - BEST SELLER",
+    "price": 45000,
+    "badge": null,
+    "badgeType": null,
+    "image": "/assets/images/banh-tiramisu.webp",
+    "description": "Bánh kem Tiramisu dạng hũ thơm nồng hương cà phê và lớp phô mai mascarpone béo ngậy.",
+    "images": [
+      "/assets/images/banh-tiramisu.webp",
+      "/assets/images/banhkemtiramisu.webp"
+    ]
+  },
+  {
+    "id": "bn-2",
+    "name": "Bánh Kem Hương Dâu",
+    "category": "CAKE - BEST SELLER",
+    "categoryName": "CAKE - BEST SELLER",
+    "price": 45000,
+    "badge": null,
+    "badgeType": null,
+    "image": "/assets/images/banhkemhuongdau.webp",
+    "description": "Bánh kem hũ vị dâu tây tươi ngọt ngào thanh mát hòa cùng cốt bánh mềm xốp.",
+    "images": [
+      "/assets/images/banhkemhuongdau.webp"
+    ]
+  },
+  {
+    "id": "bn-5",
+    "name": "Bánh Tiramisu",
+    "category": "CAKE - BEST SELLER",
+    "categoryName": "CAKE - BEST SELLER",
+    "price": 39000,
+    "badge": "THỬ NGAY!",
+    "badgeType": "banner",
+    "image": "/assets/images/banh-tiramisu.webp",
+    "description": "Bánh Tiramisu truyền thống mềm mịn đắng nhẹ vị cacao đượm hương cà phê.",
+    "images": [
+      "/assets/images/banh-tiramisu.webp",
+      "/assets/images/banhkemtiramisu.webp"
+    ]
+  },
+  {
+    "id": "bn-7",
+    "name": "Bánh Su Kem",
+    "category": "CAKE - BEST SELLER",
+    "categoryName": "CAKE - BEST SELLER",
+    "price": 29000,
+    "badge": "BÁN CHẠY!",
+    "badgeType": "banner",
+    "image": "/assets/images/sukem.webp",
+    "description": "Bánh su kem vỏ vàng ươm nhân kem vani sánh mịn tan chảy trong miệng.",
+    "images": [
+      "/assets/images/sukem.webp"
+    ]
+  },
+  {
+    "id": "bn-8",
+    "name": "Mousse Cacao",
+    "category": "CAKE - BEST SELLER",
+    "categoryName": "CAKE - BEST SELLER",
+    "price": 35000,
+    "badge": null,
+    "badgeType": null,
+    "image": "/assets/images/mousse-ca-cao.webp",
+    "description": "Lớp mousse cacao đắng nhẹ béo ngậy mềm mượt tan trên đầu lưỡi.",
+    "images": [
+      "/assets/images/mousse-ca-cao.webp"
+    ]
+  },
+  {
+    "id": "bn-9",
+    "name": "Bánh Phô Mai Chanh Dây",
+    "category": "CAKE - BEST SELLER",
+    "categoryName": "CAKE - BEST SELLER",
+    "price": 35000,
+    "badge": null,
+    "badgeType": null,
+    "image": "/assets/images/pho-mai-chanh-day.webp",
+    "description": "Lớp sốt chanh dây chua ngọt hài hòa cùng vị phô mai béo đậm đà.",
+    "images": [
+      "/assets/images/pho-mai-chanh-day.webp"
+    ]
+  },
+  {
+    "id": "bn-11",
+    "name": "Bánh Phô Mai Caramel",
+    "category": "CAKE - BEST SELLER",
+    "categoryName": "CAKE - BEST SELLER",
+    "price": 35000,
+    "badge": null,
+    "badgeType": null,
+    "image": "/assets/images/pho-mai-caramel.webp",
+    "description": "Lớp caramel ngọt đắng mượt mà phủ trên ổ phô mai béo thơm khó cưỡng.",
+    "images": [
+      "/assets/images/pho-mai-caramel.webp"
+    ]
+  },
+  {
+    "id": "bmq-1",
+    "name": "Bánh Mì Que Pate",
+    "category": "Bánh Mì Que",
+    "categoryName": "Bánh Mì Que",
+    "price": 19000,
+    "badge": null,
+    "badgeType": null,
+    "image": "/assets/images/banhmique.webp",
+    "description": "Bánh mì que giòn rụm với lớp pate gan béo ngậy thơm nức mũi chuẩn vị Highlands.",
+    "images": [
+      "/assets/images/banhmique.webp"
+    ]
+  },
+  {
+    "id": "bmq-2",
+    "name": "Bánh Mì Que Gà Phô Mai",
+    "category": "Bánh Mì Que",
+    "categoryName": "Bánh Mì Que",
+    "price": 19000,
+    "badge": null,
+    "badgeType": null,
+    "image": "/assets/images/bmq-ga-pho-mai.webp",
+    "description": "Bánh mì giòn rụm nhân gà xé phô mai tan chảy đậm đà hấp dẫn.",
+    "images": [
+      "/assets/images/bmq-ga-pho-mai.webp"
+    ]
+  },
+  {
+    "id": "bmq-3",
+    "name": "Bánh Croissant",
+    "category": "Bánh Mì Que",
+    "categoryName": "Bánh Mì Que",
+    "price": 29000,
+    "badge": "BÁN CHẠY!",
+    "badgeType": "banner",
+    "image": "/assets/images/croisaint.webp",
+    "description": "Bánh sừng bò ngàn lớp giòn xốp thơm lừng vị bơ Pháp cao cấp.",
+    "images": [
+      "/assets/images/croisaint.webp"
+    ]
+  },
+  {
+    "id": "mc-1",
+    "name": "MatchaĐI Latte",
+    "category": "matcha",
+    "categoryName": "MatchaĐI",
+    "price": 59000,
+    "badge": "LIMITED EDITION",
+    "badgeType": "limited",
+    "image": "/assets/images/matchadl-latte.webp",
+    "description": "Thức uống MatchaĐI Latte béo ngậy thơm nồng trà xanh Matcha Nhật Bản kết hợp cùng sữa tươi mát lạnh.",
+    "images": [
+      "/assets/images/matchadl-latte.webp"
+    ]
+  },
+  {
+    "id": "mc-2",
+    "name": "MatchaĐI Dừa Mây",
+    "category": "matcha",
+    "categoryName": "MatchaĐI",
+    "price": 69000,
+    "badge": "LIMITED EDITION",
+    "badgeType": "limited",
+    "image": "/assets/images/matchadl-dua.webp",
+    "description": "Lớp mây dừa béo mịn quyện cùng Matcha thanh mát và dừa sấy giòn rụm bên trên.",
+    "images": [
+      "/assets/images/matchadl-dua.webp"
+    ]
+  },
+  {
+    "id": "other-5",
+    "name": "Sô Cô La Đá",
+    "category": "drinks",
+    "categoryName": "Thức Uống Khác",
+    "price": 59000,
+    "badge": null,
+    "badgeType": null,
+    "image": "/assets/images/socola-da.webp",
+    "description": "Sô-cô-la đá mát lạnh ngọt ngào béo ngậy phủ lớp kem tươi ngon ngất ngây.",
+    "images": [
+      "/assets/images/socola-da.webp",
+      "/assets/images/socola-da1.webp"
+    ]
+  },
+  {
+    "id": "other-1",
+    "name": "Chanh Dây Đá Viên",
+    "category": "drinks",
+    "categoryName": "Thức Uống Khác",
+    "price": 49000,
+    "badge": null,
+    "badgeType": null,
+    "image": "/assets/images/chanh-day-da-vien.webp",
+    "description": "Vị chanh dây chua ngọt tươi mát mọng nước xua tan cái nóng bứt ranh.",
+    "images": [
+      "/assets/images/chanh-day-da-vien.webp",
+      "/assets/images/chanh-day-da-vien1.webp"
+    ]
+  },
+  {
+    "id": "other-2",
+    "name": "Tắc/Quất Đá Viên",
+    "category": "drinks",
+    "categoryName": "Thức Uống Khác",
+    "price": 49000,
+    "badge": null,
+    "badgeType": null,
+    "image": "/assets/images/tacdavien.webp",
+    "description": "Nước tắc tươi thơm lừng vị sảng khoái mát lạnh cực đã.",
+    "images": [
+      "/assets/images/tacdavien.webp",
+      "/assets/images/tac-da-vien1.webp"
+    ]
+  },
+  {
+    "id": "other-3",
+    "name": "Chanh Đá Xay",
+    "category": "drinks",
+    "categoryName": "Thức Uống Khác",
+    "price": 49000,
+    "badge": null,
+    "badgeType": null,
+    "image": "/assets/images/chanh-da-xay.webp",
+    "description": "Chanh tươi đá xay mát lạnh cực độ đánh tan cơn khát.",
+    "images": [
+      "/assets/images/chanh-da-xay.webp",
+      "/assets/images/chanh-da-xay1.webp"
+    ]
+  },
+  {
+    "id": "other-4",
+    "name": "Chanh Đá Viên",
+    "category": "drinks",
+    "categoryName": "Thức Uống Khác",
+    "price": 49000,
+    "badge": null,
+    "badgeType": null,
+    "image": "/assets/images/chanh-da-vien.webp",
+    "description": "Nước chanh tươi sảng khoái với lát chanh mọng nước thanh mát.",
+    "images": [
+      "/assets/images/chanh-da-vien.webp",
+      "/assets/images/chanh-da-vien1.webp"
+    ]
+  },
+  {
+    "id": "other-6",
+    "name": "Sữa Tươi Nóng",
+    "category": "drinks",
+    "categoryName": "Thức Uống Khác",
+    "price": 49000,
+    "badge": null,
+    "badgeType": null,
+    "image": "/assets/images/sua-tuoi-nong.webp",
+    "description": "Sữa tươi ấm nóng ngọt dịu bồi bổ năng lượng nhẹ nhàng cho ngày mới.",
+    "images": [
+      "/assets/images/sua-tuoi-nong.webp",
+      "/assets/images/sua-tuoi-nong1.webp"
+    ]
+  },
+  {
+    "id": "other-7",
+    "name": "Chanh Nóng",
+    "category": "drinks",
+    "categoryName": "Thức Uống Khác",
+    "price": 49000,
+    "badge": null,
+    "badgeType": null,
+    "image": "/assets/images/highlands_hot_tea.jpg",
+    "description": "Chanh nóng ấm áp dạt dào vitamin C giúp thanh lọc cơ thể.",
+    "images": [
+      "/assets/images/highlands_hot_tea.jpg",
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuAnbC6oUn4QyrJHCDLoRAi5hbRW8YqRfXHFDLYrAPmkiyijRSWhLj23UCGyTfuQUse0SejoAbG8XN2Pm9f4WLg_1sEBiKryuSCZztB--uIwJhD7IEmkBZ91c7EIZBeyoI5tejI3qODVJmFPJQrYSDX7dsppU_AjeHFk3K7wK4M1non3yd7qEVm5xM2UaiJYjEHzZhyo4E7AGrOk7snQaeSydROy63ntADS2ZKnj0syhjvjmr5YnXk2LXWw5d2d_6tzZ7PM"
+    ]
+  },
+  {
+    "id": "other-8",
+    "name": "Sô Cô La Nóng",
+    "category": "drinks",
+    "categoryName": "Thức Uống Khác",
+    "price": 59000,
+    "badge": null,
+    "badgeType": null,
+    "image": "/assets/images/socola-nong.webp",
+    "description": "Sô-cô-la nóng nồng nàn thơm phức ngọt ngào ấm lòng.",
+    "images": [
+      "/assets/images/socola-nong.webp",
+      "/assets/images/socola-nong1.webp"
+    ]
+  },
+  {
+    "id": "pk-1",
+    "name": "FREEPLAY Tumbler 750ml",
+    "category": "Phụ Kiện",
+    "categoryName": "Phụ Kiện",
+    "price": 209500,
+    "oldPrice": 419000,
+    "discountPercent": 50,
+    "badge": "-50%",
+    "badgeType": "discount",
+    "image": "/assets/images/acc_power_blue.jpg",
+    "description": "Bình giữ nhiệt FREEPLAY Tumbler 750ml màu hồng trẻ trung, thiết kế quai xách tiện lợi và khả năng giữ nhiệt vượt trội."
+  },
+  {
+    "id": "pk-2",
+    "name": "POWER Tumbler 550ml",
+    "category": "Phụ Kiện",
+    "categoryName": "Phụ Kiện",
+    "price": 199500,
+    "oldPrice": 399000,
+    "discountPercent": 50,
+    "badge": "-50%",
+    "badgeType": "discount",
+    "image": "/assets/images/acc_power_blue.jpg",
+    "description": "Bình giữ nhiệt POWER Tumbler 550ml màu xanh dương hiện đại, kiểu dáng thon gọn dễ mang theo mọi nơi."
+  },
+  {
+    "id": "pk-3",
+    "name": "BOSSY Tumbler 470ml",
+    "category": "Phụ Kiện",
+    "categoryName": "Phụ Kiện",
+    "price": 199500,
+    "oldPrice": 399000,
+    "discountPercent": 50,
+    "badge": "-50%",
+    "badgeType": "discount",
+    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuCJYicLRRIeZkMThmIC5kyBNT84MzgY7lsw0po7_fEhOAGcpByrYWOpxDjk4fZfQ19TM7YRtrQBVIh1jHMTgBR_5GXNb2PByPgAP-hMkvbIUJv2Ti78DZ3WcnRAT0RVdNtEVrT5K-7z6z6HisLb5w4B3fyWV5r3OpP7kP1e4E7gjiPGCmej3XuofrDpVfUeU-yCLClGsiRNSV8rfpapu7jLtjZLTMhlU1KQv_br_sfmf5b5RHfD1yVEH4WYr9LhmhtTs7Fw11lMLBjAIcI",
+    "description": "Bình giữ nhiệt BOSSY Tumbler 470ml màu trắng trang nhã, quai móc kim loại chắc chắn giữ nóng/lạnh hiệu quả."
+  },
+  {
+    "id": "pk-4",
+    "name": "CHICCHIC Tumbler 600ml",
+    "category": "Phụ Kiện",
+    "categoryName": "Phụ Kiện",
+    "price": 194500,
+    "oldPrice": 389000,
+    "discountPercent": 50,
+    "badge": "-50%",
+    "badgeType": "discount",
+    "image": "/assets/images/acc_power_blue.jpg",
+    "description": "Bình giữ nhiệt CHICCHIC Tumbler 600ml màu xanh bạc hà dịu mát kèm ống hút tiện dụng."
+  },
+  {
+    "id": "pk-5",
+    "name": "Ly giữ nhiệt Âu Lạc",
+    "category": "Phụ Kiện",
+    "categoryName": "Phụ Kiện",
+    "price": 649000,
+    "oldPrice": null,
+    "badge": null,
+    "badgeType": null,
+    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuCrMiuVSbmMOEJjypn6rDYJQdkfBo3Fyf05Ct6zuyuyJnKio688zEgb83G8ZxcY_K2YjlUKgLSuDQ6N3aTrkXYQ7fJlO43XVJFO6DLm-r0Xj2br1izetk8Jkrke2s_BJyUncB40HP_cTCY0D1hPmioNv7ojR-OWnkPGbSa-c5P1lpG6BG1rJ1ekHJwHThe7iH367OFik-7_aFnhXGbmYJw12u6Xsc2dNGiOOxBQuICW9CzG9BJteyRsHtucQZDBflZGHLmv7SI0L9b7YGo",
+    "description": "Ly giữ nhiệt cao cấp in họa tiết Âu Lạc độc bản, dung tích lớn giữ nhiệt lâu đến 12h."
+  },
+  {
+    "id": "pk-6",
+    "name": "Ly giữ nhiệt Tết Việt",
+    "category": "Phụ Kiện",
+    "categoryName": "Phụ Kiện",
+    "price": 649000,
+    "oldPrice": null,
+    "badge": null,
+    "badgeType": null,
+    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuCrMiuVSbmMOEJjypn6rDYJQdkfBo3Fyf05Ct6zuyuyJnKio688zEgb83G8ZxcY_K2YjlUKgLSuDQ6N3aTrkXYQ7fJlO43XVJFO6DLm-r0Xj2br1izetk8Jkrke2s_BJyUncB40HP_cTCY0D1hPmioNv7ojR-OWnkPGbSa-c5P1lpG6BG1rJ1ekHJwHThe7iH367OFik-7_aFnhXGbmYJw12u6Xsc2dNGiOOxBQuICW9CzG9BJteyRsHtucQZDBflZGHLmv7SI0L9b7YGo",
+    "description": "Ly giữ nhiệt Tết Việt màu đỏ nổi bật in họa tiết lễ hội truyền thống rực rỡ."
+  },
+  {
+    "id": "pk-7",
+    "name": "Ly sứ Golden 300ml",
+    "category": "Phụ Kiện",
+    "categoryName": "Phụ Kiện",
+    "price": 305000,
+    "oldPrice": null,
+    "badge": null,
+    "badgeType": null,
+    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuCJYicLRRIeZkMThmIC5kyBNT84MzgY7lsw0po7_fEhOAGcpByrYWOpxDjk4fZfQ19TM7YRtrQBVIh1jHMTgBR_5GXNb2PByPgAP-hMkvbIUJv2Ti78DZ3WcnRAT0RVdNtEVrT5K-7z6z6HisLb5w4B3fyWV5r3OpP7kP1e4E7gjiPGCmej3XuofrDpVfUeU-yCLClGsiRNSV8rfpapu7jLtjZLTMhlU1KQv_br_sfmf5b5RHfD1yVEH4WYr9LhmhtTs7Fw11lMLBjAIcI",
+    "description": "Ly sứ Golden Memories 300ml mạ viền kim loại sang trọng mừng 25 năm Highlands Coffee."
+  },
+  {
+    "id": "pk-8",
+    "name": "Ly nhựa Lily Jelly",
+    "category": "Phụ Kiện",
+    "categoryName": "Phụ Kiện",
+    "price": 275000,
+    "oldPrice": null,
+    "badge": null,
+    "badgeType": null,
+    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuCJYicLRRIeZkMThmIC5kyBNT84MzgY7lsw0po7_fEhOAGcpByrYWOpxDjk4fZfQ19TM7YRtrQBVIh1jHMTgBR_5GXNb2PByPgAP-hMkvbIUJv2Ti78DZ3WcnRAT0RVdNtEVrT5K-7z6z6HisLb5w4B3fyWV5r3OpP7kP1e4E7gjiPGCmej3XuofrDpVfUeU-yCLClGsiRNSV8rfpapu7jLtjZLTMhlU1KQv_br_sfmf5b5RHfD1yVEH4WYr9LhmhtTs7Fw11lMLBjAIcI",
+    "description": "Ly nhựa 2 lớp Lily Jelly màu hồng ngot ngào kèm ống hút tiện dụng."
+  },
+  {
+    "id": "pk-9",
+    "name": "Móc trang trí điện thoại",
+    "category": "Phụ Kiện",
+    "categoryName": "Phụ Kiện",
+    "price": 95000,
+    "oldPrice": null,
+    "badge": null,
+    "badgeType": null,
+    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuCJYicLRRIeZkMThmIC5kyBNT84MzgY7lsw0po7_fEhOAGcpByrYWOpxDjk4fZfQ19TM7YRtrQBVIh1jHMTgBR_5GXNb2PByPgAP-hMkvbIUJv2Ti78DZ3WcnRAT0RVdNtEVrT5K-7z6z6HisLb5w4B3fyWV5r3OpP7kP1e4E7gjiPGCmej3XuofrDpVfUeU-yCLClGsiRNSV8rfpapu7jLtjZLTMhlU1KQv_br_sfmf5b5RHfD1yVEH4WYr9LhmhtTs7Fw11lMLBjAIcI",
+    "description": "Móc trang trí điện thoại chuỗi hạt xinh xắn cá tính đậm chất Highlands."
+  },
+  {
+    "id": "pk-10",
+    "name": "Ly Nhựa Nón Lá",
+    "category": "Phụ Kiện",
+    "categoryName": "Phụ Kiện",
+    "price": 459000,
+    "oldPrice": null,
+    "badge": null,
+    "badgeType": null,
+    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuCJYicLRRIeZkMThmIC5kyBNT84MzgY7lsw0po7_fEhOAGcpByrYWOpxDjk4fZfQ19TM7YRtrQBVIh1jHMTgBR_5GXNb2PByPgAP-hMkvbIUJv2Ti78DZ3WcnRAT0RVdNtEVrT5K-7z6z6HisLb5w4B3fyWV5r3OpP7kP1e4E7gjiPGCmej3XuofrDpVfUeU-yCLClGsiRNSV8rfpapu7jLtjZLTMhlU1KQv_br_sfmf5b5RHfD1yVEH4WYr9LhmhtTs7Fw11lMLBjAIcI",
+    "description": "Ly nhựa 2 lớp phong cách Nón Lá truyền thống màu đỏ ấn tượng."
+  },
+  {
+    "id": "pk-11",
+    "name": "Bình Giữ Nhiệt Highlands",
+    "category": "Phụ Kiện",
+    "categoryName": "Phụ Kiện",
+    "price": 580000,
+    "oldPrice": null,
+    "badge": null,
+    "badgeType": null,
+    "image": "/assets/images/acc_power_blue.jpg",
+    "description": "Bình giữ nhiệt chất liệu thép không gỉ màu đen nhám khắc logo Highlands Coffee."
+  },
+  {
+    "id": "pk-12",
+    "name": "LY THỦY TINH ỐNG HÚT HỌA TIẾT NẮP GÔ",
+    "category": "Phụ Kiện",
+    "categoryName": "Phụ Kiện",
+    "price": 289000,
+    "oldPrice": 329000,
+    "discountPercent": 12,
+    "badge": "-12%",
+    "badgeType": "discount",
+    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuCJYicLRRIeZkMThmIC5kyBNT84MzgY7lsw0po7_fEhOAGcpByrYWOpxDjk4fZfQ19TM7YRtrQBVIh1jHMTgBR_5GXNb2PByPgAP-hMkvbIUJv2Ti78DZ3WcnRAT0RVdNtEVrT5K-7z6z6HisLb5w4B3fyWV5r3OpP7kP1e4E7gjiPGCmej3XuofrDpVfUeU-yCLClGsiRNSV8rfpapu7jLtjZLTMhlU1KQv_br_sfmf5b5RHfD1yVEH4WYr9LhmhtTs7Fw11lMLBjAIcI",
+    "description": "Ly thủy tinh kèm ống hút nắp gỗ sang trọng bọc bao da cao cấp."
+  },
+  {
+    "id": "pk-13",
+    "name": "LY THỦY TINH ỐNG HÚT HỌA TIẾT HIGHLANDS",
+    "category": "Phụ Kiện",
+    "categoryName": "Phụ Kiện",
+    "price": 289000,
+    "oldPrice": 329000,
+    "discountPercent": 12,
+    "badge": "-12%",
+    "badgeType": "discount",
+    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuCJYicLRRIeZkMThmIC5kyBNT84MzgY7lsw0po7_fEhOAGcpByrYWOpxDjk4fZfQ19TM7YRtrQBVIh1jHMTgBR_5GXNb2PByPgAP-hMkvbIUJv2Ti78DZ3WcnRAT0RVdNtEVrT5K-7z6z6HisLb5w4B3fyWV5r3OpP7kP1e4E7gjiPGCmej3XuofrDpVfUeU-yCLClGsiRNSV8rfpapu7jLtjZLTMhlU1KQv_br_sfmf5b5RHfD1yVEH4WYr9LhmhtTs7Fw11lMLBjAIcI",
+    "description": "Ly thủy tinh mờ họa tiết Highlands Coffee kèm ống hút nắp gỗ."
+  },
+  {
+    "id": "pk-14",
+    "name": "LY THỦY TINH ỐNG HÚT HỌA TIẾT SAO",
+    "category": "Phụ Kiện",
+    "categoryName": "Phụ Kiện",
+    "price": 289000,
+    "oldPrice": 329000,
+    "discountPercent": 12,
+    "badge": "-12%",
+    "badgeType": "discount",
+    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuCJYicLRRIeZkMThmIC5kyBNT84MzgY7lsw0po7_fEhOAGcpByrYWOpxDjk4fZfQ19TM7YRtrQBVIh1jHMTgBR_5GXNb2PByPgAP-hMkvbIUJv2Ti78DZ3WcnRAT0RVdNtEVrT5K-7z6z6HisLb5w4B3fyWV5r3OpP7kP1e4E7gjiPGCmej3XuofrDpVfUeU-yCLClGsiRNSV8rfpapu7jLtjZLTMhlU1KQv_br_sfmf5b5RHfD1yVEH4WYr9LhmhtTs7Fw11lMLBjAIcI",
+    "description": "Ly thủy tinh mờ in họa tiết ngôi sao lấp lánh kèm ống hút."
+  },
+  {
+    "id": "pk-15",
+    "name": "BÌNH GIỮ NHIỆT HOẠ TIẾT LÁ CÀ PHÊ",
+    "category": "Phụ Kiện",
+    "categoryName": "Phụ Kiện",
+    "price": 499000,
+    "oldPrice": 529000,
+    "discountPercent": 6,
+    "badge": "-6%",
+    "badgeType": "discount",
+    "image": "/assets/images/acc_power_blue.jpg",
+    "description": "Bình giữ nhiệt inox họa tiết lá cà phê nghệ thuật quai xách chắc chắn."
+  },
+  {
+    "id": "pk-16",
+    "name": "BÌNH GIỮ NHIỆT LOGO MÀU NÂU TRƠN",
+    "category": "Phụ Kiện",
+    "categoryName": "Phụ Kiện",
+    "price": 499000,
+    "oldPrice": 529000,
+    "discountPercent": 6,
+    "badge": "-6%",
+    "badgeType": "discount",
+    "image": "/assets/images/acc_power_blue.jpg",
+    "description": "Bình giữ nhiệt màu nâu đồng sang trọng in logo Highlands Coffee nổi bật."
+  },
+  {
+    "id": "cpdg-1",
+    "name": "Cà phê rang xay Moka Highlands Coffee gói 250g",
+    "category": "Cà Phê Đóng Gói",
+    "categoryName": "Cà Phê Đóng Gói",
+    "price": 145000,
+    "oldPrice": null,
+    "badge": null,
+    "badgeType": null,
+    "image": "/assets/images/pkg_coffee.jpg",
+    "description": "Cà phê rang xay Moka thơm ngào ngạt, vị chua thanh tinh tế hậu vị ngọt ngào lưu luyến."
+  },
+  {
+    "id": "cpdg-2",
+    "name": "Cà phê rang xay Culi Highlands Coffee gói 250g",
+    "category": "Cà Phê Đóng Gói",
+    "categoryName": "Cà Phê Đóng Gói",
+    "price": 135000,
+    "oldPrice": null,
+    "badge": null,
+    "badgeType": null,
+    "image": "/assets/images/pkg_coffee.jpg",
+    "description": "Cà phê Culi đậm đà, vị đắng gắt nồng nàn cùng hàm lượng caffeine cao cho ngày làm việc tỉnh táo."
+  },
+  {
+    "id": "cpdg-3",
+    "name": "Cà phê rang xay Full City Roast Highlands Coffee gói 1kg",
+    "category": "Cà Phê Đóng Gói",
+    "categoryName": "Cà Phê Đóng Gói",
+    "price": 665000,
+    "oldPrice": null,
+    "badge": null,
+    "badgeType": null,
+    "image": "/assets/images/pkg_coffee.jpg",
+    "description": "Cà phê rang mộc Full City Roast hương vị mộc mạc nguyên bản thích hợp pha Espresso và Phin."
+  },
+  {
+    "id": "cpdg-4",
+    "name": "Cà phê rang xay Truyền Thống Highlands Coffee gói 1kg",
+    "category": "Cà Phê Đóng Gói",
+    "categoryName": "Cà Phê Đóng Gói",
+    "price": 105000,
+    "oldPrice": null,
+    "badge": null,
+    "badgeType": null,
+    "image": "/assets/images/pkg_coffee.jpg",
+    "description": "Cà phê Truyền Thống Highlands Coffee kết hợp giữa hạt Robusta và Arabica đậm đà chuẩn gu Việt."
+  },
+  {
+    "id": "cpdg-5",
+    "name": "CÀ PHÊ HÒA TAN 3 TRONG 1 HIGHLANDS COFFEE",
+    "category": "Cà Phê Đóng Gói",
+    "categoryName": "Cà Phê Đóng Gói",
+    "price": 75000,
+    "oldPrice": 163000,
+    "discountPercent": 54,
+    "badge": "-54%",
+    "badgeType": "discount",
+    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuCrMiuVSbmMOEJjypn6rDYJQdkfBo3Fyf05Ct6zuyuyJnKio688zEgb83G8ZxcY_K2YjlUKgLSuDQ6N3aTrkXYQ7fJlO43XVJFO6DLm-r0Xj2br1izetk8Jkrke2s_BJyUncB40HP_cTCY0D1hPmioNv7ojR-OWnkPGbSa-c5P1lpG6BG1rJ1ekHJwHThe7iH367OFik-7_aFnhXGbmYJw12u6Xsc2dNGiOOxBQuICW9CzG9BJteyRsHtucQZDBflZGHLmv7SI0L9b7YGo",
+    "description": "Cà phê hòa tan 3in1 vị đậm đà thơm lừng ngon như cà phê pha phin tiện lợi mọi lúc mọi nơi."
+  },
+  {
+    "id": "cpdg-6",
+    "name": "CÀ PHÊ HÒA TAN 3 TRONG 1 HIGHLANDS COFFEE BỊCH LỚN",
+    "category": "Cà Phê Đóng Gói",
+    "categoryName": "Cà Phê Đóng Gói",
+    "price": 179000,
+    "oldPrice": 199000,
+    "discountPercent": 10,
+    "badge": "-10%",
+    "badgeType": "discount",
+    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuCrMiuVSbmMOEJjypn6rDYJQdkfBo3Fyf05Ct6zuyuyJnKio688zEgb83G8ZxcY_K2YjlUKgLSuDQ6N3aTrkXYQ7fJlO43XVJFO6DLm-r0Xj2br1izetk8Jkrke2s_BJyUncB40HP_cTCY0D1hPmioNv7ojR-OWnkPGbSa-c5P1lpG6BG1rJ1ekHJwHThe7iH367OFik-7_aFnhXGbmYJw12u6Xsc2dNGiOOxBQuICW9CzG9BJteyRsHtucQZDBflZGHLmv7SI0L9b7YGo",
+    "description": "Cà phê hòa tan 3in1 bịch lớn 50 gói tiết kiệm hơn, thích hợp dùng cho gia đình và văn phòng."
+  },
+  {
+    "id": "cpdg-7",
+    "name": "Cà Phê Sữa Lon 235ml",
+    "category": "Cà Phê Đóng Gói",
+    "categoryName": "Cà Phê Đóng Gói",
+    "price": 30000,
+    "oldPrice": null,
+    "badge": null,
+    "badgeType": null,
+    "image": "/assets/images/pkg_coffee.jpg",
+    "description": "Cà phê sữa đóng lon Highlands Coffee mát lạnh đậm đà sẵn sàng thưởng thức mọi lúc mọi nơi."
+  },
+  {
+    "id": "cpdg-8",
+    "name": "Cà phê sữa đóng lon Highlands Coffee - lốc 6 lon",
+    "category": "Cà Phê Đóng Gói",
+    "categoryName": "Cà Phê Đóng Gói",
+    "price": 95000,
+    "oldPrice": null,
+    "badge": null,
+    "badgeType": null,
+    "image": "/assets/images/pkg_coffee.jpg",
+    "description": "Lốc 6 lon cà phê sữa đóng lon 235ml vô cùng tiện lợi và tiết kiệm."
+  },
+  {
+    "id": "mc-3",
+    "name": "Bánh Trung Thu Đậu Xanh",
+    "category": "BÁNH TRUNG THU",
+    "categoryName": "Bánh Trung Thu",
+    "price": 99000,
+    "badge": null,
+    "badgeType": null,
+    "image": "/assets/images/banh-trung-thu-dau-xanh.webp",
+    "description": "Bánh Trung Thu Đậu Xanh truyền thống bùi béo"
+  },
+  {
+    "id": "mc-4",
+    "name": "Bánh Trung Thu Thập Cẩm Bát Bửu",
+    "category": "BÁNH TRUNG THU",
+    "categoryName": "Bánh Trung Thu",
+    "price": 119000,
+    "badge": null,
+    "badgeType": null,
+    "image": "/assets/images/banh-trung-thu-thap-cam-bat-buu.webp",
+    "description": "Bánh Trung Thu Thập Cẩm đậm đà vị truyền thống"
+  }
+]

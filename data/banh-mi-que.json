@@ -1,0 +1,44 @@
+[
+  {
+    "id": "bmq-1",
+    "name": "Bánh Mì Que Pate",
+    "category": "Bánh Mì Que",
+    "categoryName": "Bánh Mì Que",
+    "price": 19000,
+    "badge": null,
+    "badgeType": null,
+    "image": "/assets/images/banhmique.webp",
+    "description": "Bánh mì que giòn rụm với lớp pate gan béo ngậy thơm nức mũi chuẩn vị Highlands.",
+    "images": [
+      "/assets/images/banhmique.webp"
+    ]
+  },
+  {
+    "id": "bmq-2",
+    "name": "Bánh Mì Que Gà Phô Mai",
+    "category": "Bánh Mì Que",
+    "categoryName": "Bánh Mì Que",
+    "price": 19000,
+    "badge": null,
+    "badgeType": null,
+    "image": "/assets/images/bmq-ga-pho-mai.webp",
+    "description": "Bánh mì giòn rụm nhân gà xé phô mai tan chảy đậm đà hấp dẫn.",
+    "images": [
+      "/assets/images/bmq-ga-pho-mai.webp"
+    ]
+  },
+  {
+    "id": "bmq-3",
+    "name": "Bánh Croissant",
+    "category": "Bánh Mì Que",
+    "categoryName": "Bánh Mì Que",
+    "price": 29000,
+    "badge": "BÁN CHẠY!",
+    "badgeType": "banner",
+    "image": "/assets/images/croisaint.webp",
+    "description": "Bánh sừng bò ngàn lớp giòn xốp thơm lừng vị bơ Pháp cao cấp.",
+    "images": [
+      "/assets/images/croisaint.webp"
+    ]
+  }
+]

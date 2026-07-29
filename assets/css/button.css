@@ -1,0 +1,20 @@
+.btn-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.btn-outline-highlands {
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  font-weight: 700;
+  border-radius: var(--radius-md);
+  padding: 8px 16px;
+  background: transparent;
+  transition: all 0.2s;
+}
+
+.btn-outline-highlands:hover {
+  background-color: var(--primary-light);
+}

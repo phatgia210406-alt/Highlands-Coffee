@@ -1,0 +1,101 @@
+/* ==========================================================================
+   GLOBAL RESPONSIVE DESIGN IMPROVEMENTS
+   ========================================================================== */
+
+/* Universal image responsiveness safety */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Prevent accidental horizontal scrolling globally */
+html, body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+/* Fluid, responsive paddings for all containers */
+.container {
+  width: 100% !important;
+  padding-right: clamp(12px, 3.5vw, 24px) !important;
+  padding-left: clamp(12px, 3.5vw, 24px) !important;
+}
+
+/* Support larger container max-widths on high resolution screens or zoom-out */
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1340px !important;
+  }
+}
+@media (min-width: 1600px) {
+  .container {
+    max-width: 1520px !important;
+  }
+}
+@media (min-width: 1920px) {
+  .container {
+    max-width: 1720px !important;
+  }
+}
+
+/* ==========================================================================
+   HEADER & NAVBAR MOBILE OPTIMIZATIONS
+   ========================================================================== */
+
+@media (max-width: 991px) {
+  /* Restructure top-navbar elements on mobile and tablet */
+  .top-navbar .col-12 {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+    padding: 8px 0 !important;
+  }
+  
+  .top-navbar .col-12.col-lg-9 {
+    flex-wrap: wrap !important;
+    gap: 8px 16px !important;
+    justify-content: center !important;
+    padding-left: 0 !important;
+  }
+  
+  .top-navbar-link {
+    font-size: 12.5px !important;
+    padding: 4px 6px !important;
+  }
+  
+  .search-box {
+    width: 200px;
+  }
+}
+
+@media (max-width: 767px) {
+  .main-header {
+    position: relative;
+  }
+  
+  .hero-banner-container {
+    margin-top: 20px;
+  }
+  
+  /* Make utility-bar icons and items scale down cleanly on small viewports */
+  .utility-bar .container {
+    gap: 8px !important;
+  }
+  
+  #openCartBtn {
+    padding: 4px 8px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .utility-bar .container {
+    padding-right: 12px !important;
+    padding-left: 12px !important;
+  }
+  
+  /* On extra-small screens, adjust typography of top-navbar-links */
+  .top-navbar-link {
+    font-size: 11.5px !important;
+  }
+}

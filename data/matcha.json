@@ -1,0 +1,30 @@
+[
+  {
+    "id": "mc-1",
+    "name": "MatchaĐI Latte",
+    "category": "matcha",
+    "categoryName": "MatchaĐI",
+    "price": 59000,
+    "badge": "LIMITED EDITION",
+    "badgeType": "limited",
+    "image": "/assets/images/matchadl-latte.webp",
+    "description": "Thức uống MatchaĐI Latte béo ngậy thơm nồng trà xanh Matcha Nhật Bản kết hợp cùng sữa tươi mát lạnh.",
+    "images": [
+      "/assets/images/matchadl-latte.webp"
+    ]
+  },
+  {
+    "id": "mc-2",
+    "name": "MatchaĐI Dừa Mây",
+    "category": "matcha",
+    "categoryName": "MatchaĐI",
+    "price": 69000,
+    "badge": "LIMITED EDITION",
+    "badgeType": "limited",
+    "image": "/assets/images/matchadl-dua.webp",
+    "description": "Lớp mây dừa béo mịn quyện cùng Matcha thanh mát và dừa sấy giòn rụm bên trên.",
+    "images": [
+      "/assets/images/matchadl-dua.webp"
+    ]
+  }
+]

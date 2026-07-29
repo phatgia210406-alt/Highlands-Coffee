@@ -1,0 +1,11 @@
+.product-detail-img {
+  border-radius: var(--radius-lg);
+  width: 100%;
+  object-fit: cover;
+  box-shadow: var(--shadow-sm);
+}
+
+.cart-item-row {
+  border-bottom: 1px solid #f1f5f9;
+  padding: 12px 0;
+}

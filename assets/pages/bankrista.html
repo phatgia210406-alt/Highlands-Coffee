@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bankrista Thịnh Vượng - Highlands Coffee</title>
+
+  <!-- Google Fonts & Material Symbols -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Global & Component Styles -->
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/header.css">
+  <link rel="stylesheet" href="/assets/css/footer.css">
+  <link rel="stylesheet" href="/assets/css/category.css">
+  <link rel="stylesheet" href="/assets/css/cart.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-announcement-bar bg-dark text-white py-1 px-3 fs-7 d-none d-md-block">
+    <div class="container d-flex justify-content-between align-items-center">
+      <span>Chào mừng bạn đến với Cửa Hàng Trực Tuyến chính thức của Highlands Coffee!</span>
+      <div class="d-flex gap-3">
+        <a href="#" class="text-white text-decoration-none">Hệ thống cửa hàng</a>
+        <a href="#" class="text-white text-decoration-none">Hỗ trợ khách hàng</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="main-header sticky-top bg-white border-bottom shadow-sm">
+    <div class="container py-2 d-flex align-items-center justify-content-between gap-3">
+      <!-- Logo -->
+      <a href="/index.html" class="navbar-brand d-flex align-items-center me-0">
+        <img src="/assets/images/icon_coffe.png" alt="Highlands Coffee Logo" class="brand-logo" style="height: 52px;" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=100&h=100&fit=crop';">
+      </a>
+
+      <!-- Search Input -->
+      <div class="search-box d-none d-md-flex flex-grow-1 mx-3 max-w-xl position-relative">
+        <span class="material-symbols-outlined position-absolute top-50 start-0 translate-middle-y ms-3 text-secondary">search</span>
+        <input type="text" id="searchInput" class="form-control rounded-pill ps-5 pe-4 py-2 border-danger-subtle bg-light" placeholder="Xin chào, bạn cần gì hôm nay?">
+      </div>
+
+      <!-- Right Utility Icons -->
+      <div class="d-flex align-items-center gap-3 gap-md-4">
+        <!-- Delivery Hotline -->
+        <div class="d-none d-sm-flex align-items-center gap-2">
+          <div class="d-flex align-items-center justify-content-center rounded-circle border border-danger text-danger" style="width: 32px; height: 32px; border-width: 1.8px !important; flex-shrink: 0;">
+            <span class="material-symbols-outlined" style="font-size: 18px; color: #b81c24;">call</span>
+          </div>
+          <div class="lh-sm" style="font-size: 13px; color: #111;">
+            <div style="font-weight: 400; color: #111;">Giao tận nơi</div>
+            <div style="font-weight: 700; font-size: 14px; color: #000;">19001755</div>
+          </div>
+        </div>
+
+        <!-- Account -->
+        <a href="/login.html" class="d-flex align-items-center gap-2 text-dark text-decoration-none">
+          <span class="material-symbols-outlined" style="font-size: 34px; color: #b81c24;">account_circle</span>
+          <div class="lh-sm d-none d-md-block" style="font-size: 13px; color: #111;">
+            <div style="font-weight: 400; color: #111;">Tài khoản</div>
+            <div style="font-size: 12px; font-weight: 400; color: #111;">Đăng nhập</div>
+          </div>
+        </a>
+
+        <!-- Cart Button -->
+        <button id="openCartBtn" class="d-flex align-items-center gap-2 px-3 py-1" style="background: #ffffff; border: 1.2px solid #b81c24; border-radius: 8px; cursor: pointer;">
+          <span class="material-symbols-outlined" style="color: #f0a500; font-size: 21px;">shopping_cart</span>
+          <span class="d-none d-sm-inline" style="font-size: 13px; font-weight: 400; color: #111;">Giỏ hàng</span>
+          <span id="cartBadgeCount" style="background-color: #ebdcd0; color: #8b1e22; border-radius: 4px; padding: 1px 7px; font-weight: 600; font-size: 13px; min-width: 20px; text-align: center; display: inline-flex; align-items: center; justify-content: center;">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Red Sub-Navbar Header -->
+  <nav class="sub-navbar" style="background-color: #b21e27; color: white;">
+    <div class="container d-flex align-items-center justify-content-between">
+      <div class="dropdown">
+        <button class="btn btn-light dropdown-toggle font-weight-bold d-flex align-items-center gap-2 rounded-0 px-3 py-2 text-danger fw-bold" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: white; border: none;">
+          <span class="material-symbols-outlined">menu</span>
+          Danh mục sản phẩm
+        </button>
+        <ul class="dropdown-menu shadow rounded-0 border-0" aria-labelledby="dropdownMenuButton">
+          <li><a class="dropdown-item py-2" href="/pages/coffee.html">Cà Phê</a></li>
+          <li><a class="dropdown-item py-2" href="/pages/phindi.html">PhinDi</a></li>
+          <li><a class="dropdown-item py-2" href="/pages/freeze.html">Freeze</a></li>
+          <li><a class="dropdown-item py-2" href="/pages/tea.html">Trà</a></li>
+          <li><a class="dropdown-item py-2" href="/pages/banh-mi-que.html">Bánh Mì Que</a></li>
+          <li><a class="dropdown-item py-2" href="/pages/cake.html">Bánh Ngọt</a></li>
+          <li><a class="dropdown-item py-2" href="/pages/accessories.html">Phụ Kiện</a></li>
+          <li><a class="dropdown-item py-2 fw-bold text-danger" href="/pages/bankrista.html">Bankrista Thịnh Vượng</a></li>
+        </ul>
+      </div>
+
+      <div class="d-none d-lg-flex align-items-center gap-4 text-white text-decoration-none font-weight-500 fs-6">
+        <a href="/pages/chinh-sach-doi-tra.html" class="text-white text-decoration-none d-flex align-items-center gap-1"><span class="material-symbols-outlined">card_giftcard</span>Chính sách đổi trả</a>
+        <a href="#" class="text-white text-decoration-none d-flex align-items-center gap-1">
+          <span class="material-symbols-outlined">location_on</span>
+          Liên hệ
+        </a>
+        <a href="/pages/bankrista.html" class="text-white text-decoration-none d-flex align-items-center gap-1 fw-bold">
+          <span class="material-symbols-outlined">campaign</span>
+          <span>Bankrista Thịnh Vượng</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="category-page py-4">
+    <div class="container">
+      
+      <!-- Breadcrumb -->
+      <nav class="breadcrumb-nav mb-3 text-muted fs-7">
+        <a href="/index.html" class="text-decoration-none text-muted">Trang chủ</a> / <span class="fw-bold text-dark">Bankrista Thịnh Vượng</span>
+      </nav>
+
+      <!-- Category Header -->
+      <h1 class="category-page-title mb-4">Bankrista Thịnh Vượng</h1>
+
+      <!-- Product Grid -->
+      <div id="categoryProductGrid" class="product-grid-4col" data-json="/data/bankrista.json">
+        <!-- Products populated dynamically -->
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer id="lien-he" class="main-footer">
+  <div class="container">
+    <div class="row g-4">
+      <!-- Col 1 -->
+      <div class="col-12 col-md-3">
+        <div class="footer-brand-title">HIGHLANDS COFFEE</div>
+        <p class="text-secondary small">Highlands Coffee® Order tự hào là nhà phân phối hợp lệ cho tất cả các sản phẩm mang thương hiệu Highlands Coffee®. Chúng tôi kết nối cộng đồng qua hương vị cà phê đậm đà bản sắc Việt.</p>
+      </div>
+
+      <!-- Col 2 -->
+      <div class="col-12 col-md-3">
+        <h6>LIÊN HỆ</h6>
+        <p class="mb-1 text-secondary">📍 125–127 Nguyễn Cơ Thạch, Quận 2, TP. Hồ Chí Minh</p>
+        <p class="mb-1 text-secondary">📞 1900 1755</p>
+        <p class="mb-0 text-secondary">🌐 highlandscoffee.com.vn</p>
+      </div>
+
+      <!-- Col 3 -->
+      <div class="col-12 col-md-3">
+        <h6>Hỗ trợ</h6>
+        <a href="/login.html" class="footer-link">Đăng nhập</a>
+        <a href="/register.html" class="footer-link">Đăng ký</a>
+        <a href="/pages/cart.html" class="footer-link">Giỏ hàng</a>
+      </div>
+
+      <!-- Col 4 -->
+      <div class="col-12 col-md-3">
+        <h6>ĐĂNG KÝ NHẬN TIN</h6>
+        <p class="text-secondary small mb-2">Nhận những ưu đãi mới nhất từ chúng tôi.</p>
+        <div class="newsletter-input-group">
+          <input type="email" placeholder="Email của bạn">
+          <button type="button">Gửi</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="border-top border-secondary mt-4 pt-3 text-center text-secondary small">
+      © 2026 Highlands Coffee. Tất cả quyền được bảo lưu.
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Offcanvas Cart Drawer -->
+  <div class="cart-backdrop" id="cartBackdrop"></div>
+  <div class="cart-drawer" id="cartDrawer">
+    <div class="cart-drawer-header">
+      <h5>Giỏ hàng của bạn</h5>
+      <button class="btn-close-cart" id="closeCartBtn">&times;</button>
+    </div>
+    <div class="cart-drawer-body" id="cartDrawerItems">
+      <p class="text-center text-muted my-4">Giỏ hàng đang trống.</p>
+    </div>
+    <div class="cart-drawer-footer">
+      <div class="d-flex justify-content-between mb-3 fw-bold">
+        <span>Tổng tiền:</span>
+        <span class="text-danger fs-5" id="cartDrawerTotal">0đ</span>
+      </div>
+      <a href="/pages/checkout.html" class="btn btn-danger w-100 py-2 fw-bold">Thanh Toán</a>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/bootstrap.bundle.min.js"></script>
+  <script src="/assets/js/app.js"></script>
+  <script src="/assets/js/search.js"></script>
+  <script src="/assets/js/product.js"></script>
+  <script src="/assets/js/cart.js"></script>
+</body>
+</html>
