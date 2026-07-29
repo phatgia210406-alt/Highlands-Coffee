@@ -77,10 +77,10 @@
     "price": 45000,
     "badge": null,
     "badgeType": null,
-    "image": "/assets/images/banh-tiramisu.webp",
+    "image": "/assets/images/banhkemtiramisu.webp",
     "description": "Bánh kem Tiramisu dạng hũ thơm nồng hương cà phê và lớp phô mai mascarpone béo ngậy.",
     "images": [
-      "/assets/images/banh-tiramisu.webp",
+      "/assets/images/banhkemtiramisu.webp",
       "/assets/images/banhkemtiramisu.webp"
     ]
   },
